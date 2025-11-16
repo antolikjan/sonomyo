@@ -21,13 +21,12 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Foxi. Tailwind CSS Astro Starter Kit by Oxygenna',
+	siteTitle: 'Sonymyo. Ultasound guided myfunctional therapy.',
 	siteDescription:
-		'Foxi is a design and development agency that specializes in creating beautiful and functional websites.',
+		'Sonomyo is a myfunctional therapy practice using ultrasound as biofeedback for speeding up and ehancing the therapy progress.',
 	ogImage: '/og.jpg',
 	logo: {
-		src: '/logo.svg',
-		alt: 'Foxi. logo'
+		src: '/sonomyo_logo_en.svg',
 	},
 	canonical: true,
 	noindex: false,

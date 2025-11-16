@@ -35,13 +35,13 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'Sonomyo.',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'Sonomyo is a myfunctional therapy practice using ultrasound as biofeedback for speeding up and ehancing the therapy progress.',
 		logo: {
-			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			src: '/sonomyo_logo_en.svg',
+			alt: 'Ultasound guided myfunctional therapy',
+			text: 'Sonomyo.'
 		}
 	},
 	footerColumns: [
@@ -106,6 +106,6 @@ export const footerNavigationData: FooterData = {
 		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Tanja Kocjančič Antolík 2025.'
 	}
 }
