@@ -21,12 +21,13 @@ export interface Config {
 }
 
 export const configData: Config = {
-	siteTitle: 'Sonymyo. Ultasound guided myfunctional therapy.',
+	siteTitle: 'Sonoymyo. Ultasound guided myfunctional therapy.',
 	siteDescription:
 		'Sonomyo is a myfunctional therapy practice using ultrasound as biofeedback for speeding up and ehancing the therapy progress.',
 	ogImage: '/og.jpg',
 	logo: {
 		src: '/sonomyo_logo_en.svg',
+		alt: 'Sonomyo'
 	},
 	canonical: true,
 	noindex: false,

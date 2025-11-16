@@ -33,16 +33,16 @@ export interface NavData {
 
 export const navigationBarData: NavData = {
 	logo: {
-		src: '/sonomyo_logo_en.svg',
+		src: '/sonomyo/sonomyo_logo_en.svg',
 		alt: 'Ultasound guided myfunctional therapy',
-		text: 'Sonomyo.'
+		text: ''
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-	    { name: 'Blog', link: '/blog' },
-		{ name: 'FAQ', link: '/faq' },
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'Home', link: '/sonomyo' },
+		{ name: 'Pricing', link: '/sonomyo/pricing' },
+	    { name: 'Blog', link: '/sonomyo/blog' },
+		{ name: 'FAQ', link: '/sonomyo/faq' },
+		{ name: 'Contact', link: '/sonomyo/contact' }
 	],
-	navActions: [{ name: 'Try it now', link: '/', style: 'primary', size: 'lg' }]
+	navActions: [{ name: 'Book appointment', link: '/sonomyo/contact', style: 'primary', size: 'lg' }]
 }

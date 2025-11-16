@@ -37,37 +37,29 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'Sonomyo.',
 		aboutText:
-			'Sonomyo is a myfunctional therapy practice using ultrasound as biofeedback for speeding up and ehancing the therapy progress.',
+			'Sonomyo is a myfunctional therapy practice specialising in ultrasound biofeedback for speeding up and ehancing the therapy progress.',
 		logo: {
-			src: '/sonomyo_logo_en.svg',
+			src: '/sonomyo/favicon.svg',
 			alt: 'Ultasound guided myfunctional therapy',
 			text: 'Sonomyo.'
 		}
 	},
 	footerColumns: [
 		{
-			category: 'Product',
+			category: 'The practice',
 			subCategories: [
 				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
+					subCategory: 'Services',
+					subCategoryLink: '/sonomyo/services'
 				},
 				{
 					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
+					subCategoryLink: '/sonomyo/faq'
 				},
 				{
 					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
+					subCategoryLink: '/sonomyo/pricing'
 				},
-				{
-					subCategory: 'Changelog',
-					subCategoryLink: '/changelog'
-				},
-				{
-					subCategory: 'Terms',
-					subCategoryLink: '/terms'
-				}
 			]
 		},
 		{
@@ -75,16 +67,12 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'About us',
-					subCategoryLink: '/'
+					subCategoryLink: '/sonomyo/'
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/blog'
+					subCategoryLink: '/sonomyo/blog'
 				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
 			]
 		},
 		{
@@ -92,16 +80,8 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/contact'
+					subCategoryLink: '/sonomyo/contact'
 				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
 			]
 		}
 	],
