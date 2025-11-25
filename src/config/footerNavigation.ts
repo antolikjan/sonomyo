@@ -63,11 +63,11 @@ export const footerNavigationData: FooterData = {
 			]
 		},
 		{
-			category: 'About us',
+			category: 'About',
 			subCategories: [
 				{
-					subCategory: 'About us',
-					subCategoryLink: '/sonomyo/'
+					subCategory: 'About',
+					subCategoryLink: '/sonomyo/About'
 				},
 				{
 					subCategory: 'News',

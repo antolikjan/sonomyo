@@ -42,6 +42,7 @@ export const navigationBarData: NavData = {
 		{ name: 'Pricing', link: '/sonomyo/pricing' },
 	    { name: 'Blog', link: '/sonomyo/blog' },
 		{ name: 'FAQ', link: '/sonomyo/faq' },
+		{ name: 'About', link: '/sonomyo/about' },
 		{ name: 'Contact', link: '/sonomyo/contact' }
 	],
 	navActions: [{ name: 'Book appointment', link: '/sonomyo/contact', style: 'primary', size: 'lg' }]

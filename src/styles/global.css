@@ -1,7 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Layout rules */
 html {
 	@apply scroll-smooth antialiased;
 }
+
 body {
 	@apply bg-white text-neutral-500 has-[.header\_\_menu--open]:overflow-hidden lg:has-[.header\_\_menu--open]:overflow-auto dark:bg-neutral-950 dark:text-neutral-400 [.dark_&]:text-neutral-400 [.light_&]:text-neutral-500;
 }
@@ -10,6 +15,7 @@ body {
 p {
 	@apply mb-6 last:mb-0;
 }
+
 h1,
 h2,
 h3,
@@ -61,9 +67,7 @@ h5 {
 h6 {
 	@apply text-base lg:text-lg;
 }
-main a {
-	@apply text-primary-500 hover:text-primary-600;
-}
+
 .highlight {
 	@apply text-primary-500;
 }
@@ -82,4 +86,13 @@ main a {
 /* To disable scroll animations remove the class "sroll-animation" from root html in the layout file */
 .scroll-animation .col {
 	@apply translate-y-4 transform opacity-0 transition-all duration-1000 [&.scroll-animated]:translate-y-0 [&.scroll-animated]:opacity-100 [&:nth-child(1)]:delay-[50ms] [&:nth-child(10)]:delay-[725ms] [&:nth-child(11)]:delay-[800ms] [&:nth-child(12)]:delay-[875ms] [&:nth-child(2)]:delay-[125ms] [&:nth-child(3)]:delay-[200ms] [&:nth-child(4)]:delay-[275ms] [&:nth-child(5)]:delay-[350ms] [&:nth-child(6)]:delay-[425ms] [&:nth-child(7)]:delay-[500ms] [&:nth-child(8)]:delay-[575ms] [&:nth-child(9)]:delay-[650ms];
+}
+
+@layer base {
+  a {
+    @apply text-primary-600/80;
+  }
+  a:hover {
+    @apply text-primary-600/60;
+  }
 }

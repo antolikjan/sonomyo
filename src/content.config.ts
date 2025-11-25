@@ -14,6 +14,16 @@ const blog = defineCollection({
 		})
 })
 
+// New collection for static markdown pages
+const pages = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
+  schema: z.object({
+    title: z.string(),
+    // optional: subtitle, order, etc.
+  }),
+});
+
 export const collections = {
-	blog
+	blog,
+	pages,
 }

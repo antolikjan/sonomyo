@@ -1,1 +1,1 @@
-Sonologo ultrasound guided myfunctional therapy practice website.
+Sonomyo ultrasound guided myfunctional therapy practice website.
