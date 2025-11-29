@@ -39,7 +39,7 @@ export const footerNavigationData: FooterData = {
 		aboutText:
 			'Sonomyo is a myfunctional therapy practice specialising in ultrasound biofeedback for speeding up and ehancing the therapy progress.',
 		logo: {
-			src: '/sonomyo/favicon.svg',
+			src: '/favicon.svg',
 			alt: 'Ultasound guided myfunctional therapy',
 			text: 'Sonomyo.'
 		}
@@ -50,15 +50,15 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Services',
-					subCategoryLink: '/sonomyo/services'
+					subCategoryLink: '/services'
 				},
 				{
 					subCategory: 'FAQ',
-					subCategoryLink: '/sonomyo/faq'
+					subCategoryLink: '/faq'
 				},
 				{
 					subCategory: 'Pricing',
-					subCategoryLink: '/sonomyo/pricing'
+					subCategoryLink: '/pricing'
 				},
 			]
 		},
@@ -67,11 +67,11 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'About',
-					subCategoryLink: '/sonomyo/About'
+					subCategoryLink: '/About'
 				},
 				{
 					subCategory: 'News',
-					subCategoryLink: '/sonomyo/blog'
+					subCategoryLink: '/blog'
 				},
 			]
 		},
@@ -80,7 +80,7 @@ export const footerNavigationData: FooterData = {
 			subCategories: [
 				{
 					subCategory: 'Contact',
-					subCategoryLink: '/sonomyo/contact'
+					subCategoryLink: '/contact'
 				},
 			]
 		}
