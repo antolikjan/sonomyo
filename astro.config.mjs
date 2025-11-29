@@ -7,8 +7,10 @@ import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://antolikjan.github.io/",
-  base : "/sonomyo",
+  site: "https://www.sonomyo.cz/",
+
+//  site: "https://antolikjan.github.io/",
+//  base : "/sonomyo",
   integrations: [
     tailwind(),
     icon(),
