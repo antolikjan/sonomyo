@@ -1,78 +1,130 @@
 [
 	{
 		"header": {
-			"title": "Basic",
-			"subtitle": "Ideal for individual developers.",
-			"currency": "$",
-			"price": "19",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "25",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"title": "Entry evaluation",
+			"subtitle": "Comprehensive evaluation during the first visit.",
+			"currency": "Kč",
+			"price": "900"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." }
+				{ "listItem": "Tongue position at rest" },
+				{ "listItem": "Tongue mobility" },
+				{ "listItem": "Lips mobility" },
+				{ "listItem": "Mouth breathing" },
+				{ "listItem": "Pronunciation of speech sounds" }
 			]
 		},
 		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
 		},
 		"type": "basic"
 	},
 	{
 		"header": {
-			"title": "Team",
-			"subtitle": "Ideal for small teams",
-			"currency": "$",
-			"price": "29",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "35",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"title": "Practice session (30m)",
+			"subtitle": "Single practice session lasting 30 minutes.",
+			"currency": "Kč",
+			"price": "400"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." },
-				{ "listItem": "Unlock endless inspiration" }
+				{ "listItem": "Oral muscle exercises" },
+				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
 			]
 		},
 		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
 		},
-		"type": "featured"
+		"type": "basic"
 	},
 	{
 		"header": {
-			"title": "Enterprise",
-			"subtitle": "Ideal for companies",
-			"currency": "$",
-			"price": "49",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "65",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"title": "Practice session (60m)",
+			"subtitle": "Single practice session lasting 30 minutes.",
+			"currency": "Kč",
+			"price": "700"
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." }
+				{ "listItem": "Oral muscle exercises" },
+				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
 			]
 		},
 		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "Package of 10 (60m)",
+			"subtitle": "Package of 10 60-minute practice session.",
+			"currency": "Kč",
+			"price": "6000"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Oral muscle exercises" },
+				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+			]
+		},
+		"footer": {
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "Package of 10 (30m)",
+			"subtitle": "Package of 10 30-minute practice session.",
+			"currency": "Kč",
+			"price": "3000"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Oral muscle exercises" },
+				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+			]
+		},
+		"footer": {
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
+		},
+		"type": "basic"
+	},
+	{
+		"header": {
+			"title": "Consultancy",
+			"subtitle": "Tap into my 15 years of research experience.",
+			"currency": "Kč/hod",
+			"price": "1500"
+		},
+		"body": {
+			"listItems": [
+				{ "listItem": "Usage of ultrasound tongue imaging in speech therapy or foreign language learning" },
+				{ "listItem": "Interpretation of ultrasound images of the tongue" },
+				{ "listItem": "Articulation: speech sound production and evaluation" },
+				{ "listItem": "Speech disorders in children and adults" }
+			]
+		},
+		"footer": {
+			"buttonName": "FAQ",
+			"buttonLink": "/faq"
 		},
 		"type": "basic"
 	}
+
 ]

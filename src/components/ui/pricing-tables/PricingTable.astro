@@ -33,18 +33,9 @@ type PricingTableProps = {
 		subtitle: string
 		currency: string
 		price: string
-		priceLabel: string
-		priceMontly?: string
-		priceLabelMontly?: string
-		buttonName: string
-		buttonLink: string
 	}
 	body?: {
 		listItems: Array<{ listItem: string }>
-	}
-	footer?: {
-		buttonName: string
-		buttonLink: string
 	}
 }
 type Props = {
@@ -60,12 +51,12 @@ const { type, header, body, footer } = data
 <div
 	id={id}
 	class:list={[
-		'pricing pricing--annualy',
+		'pricing pricing--annualy h-full flex',
 		{ [`pricing--${type}`]: type },
 		{ [`${classes}`]: classes }
 	]}
 >
-	<div class="pricing__container">
+	<div class="pricing-table flex flex-col flex-1">
 		<Header type={type}>
 			<h3
 				class:list={[
@@ -80,47 +71,30 @@ const { type, header, body, footer } = data
 			<div class="pricing__header-info">
 				<h4
 					class:list={[
-						'pricing__header-info-annualy text-5xl font-bold text-neutral-700 lg:text-6xl dark:text-neutral-50',
+						'pricing__header-info-annualy text-3xl font-bold text-neutral-700 lg:text-4xl dark:text-neutral-50',
 						{ [`text-primary-50`]: type === 'featured' }
 					]}
 				>
 					<span class="pricing__header-currency">{header.currency}</span>
 					<span class="pricing__header-price">{header.price}</span>
-					<span class="pricing__header-perTime">/{header.priceLabel}</span>
-				</h4>
-				<h4
-					class:list={[
-						'pricing__header-info-monthly text-5xl font-bold text-neutral-700 lg:text-6xl dark:text-neutral-50',
-						{ [`text-primary-50`]: type === 'featured' }
-					]}
-				>
-					<span class="pricing__header-currency">{header.currency}</span>
-					<span class="pricing__header-price">{header.priceMontly}</span>
-					<span class="pricing__header-perTime">/{header.priceLabelMontly}</span>
 				</h4>
 			</div>
 
-			<Button
-				size="lg"
-				style={type === 'featured' ? 'secondary' : 'primary'}
-				elevated
-				type="link"
-				link={header.buttonLink}
-			>
-				{header.buttonName}
-			</Button>
 		</Header>
 
 		{
 			body && (
-				<Body>
-					<List
-						type={listType}
-						listItems={body.listItems}
-						classes={type === 'featured' ? '[&_li]:!text-primary-50 space-y-4' : 'space-y-4'}
-						listColor={type === 'featured' ? 'white' : 'primary'}
-					/>
-				</Body>
+				<div class="flex-1 flex flex-col">
+					<Body class="flex flex-col flex-1">
+						<List
+							type={listType}
+							listItems={body.listItems}
+							classes={type === 'featured' ? '[&_li]:!text-primary-50 space-y-4' : 'space-y-4'}
+							listColor={type === 'featured' ? 'white' : 'primary'}
+						/>
+					</Body>
+					<div class="flex-1"></div>
+				</div>
 			)
 		}
 		{
@@ -156,7 +130,7 @@ const { type, header, body, footer } = data
 		@apply block text-sm font-normal;
 	}
 	.pricing__header-currency {
-		@apply text-3xl;
+		@apply text-2xl;
 	}
 	.pricing__header-price {
 		@apply tracking-tighter;
