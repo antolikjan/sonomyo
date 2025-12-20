@@ -37,7 +37,7 @@ export const footerNavigationData: FooterData = {
 	footerAbout: {
 		title: 'Sonomyo.',
 		aboutText:
-			'Sonomyo is a myfunctional therapy practice specialising in ultrasound biofeedback for speeding up and ehancing the therapy progress.',
+			'Sonomyo is a myfunctional therapy practice specialising in ultrasound biofeedback to speed up and ehance the therapy progress.',
 		logo: {
 			src: '/favicon.svg',
 			alt: 'Ultasound guided myfunctional therapy',

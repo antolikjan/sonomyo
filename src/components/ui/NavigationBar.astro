@@ -16,16 +16,42 @@
 import { Icon } from 'astro-icon/components'
 import Button from './Button.astro'
 import Switcher from './ModeSwitcher.astro'
+import { ui } from '../../i18n/ui'
+import { getLangFromUrl, localizePath } from '../../i18n/utils'
 
 // Data
 import { navigationBarData } from '../../config/navigationBar'
 const { logo, navItems, navActions } = navigationBarData
 
-// Determine current path
 const path = new URL(Astro.request.url).pathname
+const lang = getLangFromUrl(path)
+const t = ui[lang]
+
+// helper for localized hrefs
+const href = (p: string) => localizePath(p, lang)
+
 function isActivePath(currentPath: string): boolean {
-	return path === currentPath || path === `${currentPath}/`
+  // compare with localized path
+  const localized = href(currentPath)
+  return path === localized || path === `${localized}/`
 }
+
+/** Two-language switch:
+ *  - cs is default: /...
+ *  - en is prefixed: /en/...
+ */
+const isEnglish = path === '/en' || path.startsWith('/en/')
+
+function switchLangPath(pathname: string): string {
+	// If on /en/... go to non-prefixed version
+	if (pathname === '/en') return '/'
+	if (pathname.startsWith('/en/')) return pathname.replace('/en', '')
+
+	// Otherwise go to English version
+	return pathname === '/' ? '/en' : `/en${pathname}`
+}
+
+const otherLangHref = switchLangPath(path)
 
 // Type assertion for navActions to ensure type safety
 const savedNavActions = navActions.map((action) => ({
@@ -33,8 +59,9 @@ const savedNavActions = navActions.map((action) => ({
 	size: action.size as 'base' | 'lg' | 'sm',
 	style: action.style as 'primary' | 'secondary' | 'neutral'
 }))
----
 
+
+---
 <header class="header">
 	<div class="header__container">
 		<nav aria-label="main navigation" role="navigation" class="header__nav">
@@ -57,26 +84,26 @@ const savedNavActions = navActions.map((action) => ({
 					<span aria-hidden="true"></span>
 				</div>
 			</button>
-
 			<!-- Navigation links -->
 			<ul role="menubar" aria-label="Select page" class="header__menu">
 				{
 					navItems.map((item) => (
 						<li role="none" class="header__menu-item">
+
 							{!item.submenu ? (
 								<a
 									href={item.link}
 									role="menuitem"
 									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 								>
-									{item.name}
+									{t.nav[item.link] ?? item.name}
 								</a>
 							) : (
 								<span
 									role="menuitem"
 									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 								>
-									{item.name}
+									{t.nav[item.link] ?? item.name}
 									<Icon name="chevron-down" class="header__menu-chevron" />
 								</span>
 							)}
@@ -89,7 +116,7 @@ const savedNavActions = navActions.map((action) => ({
 												role="menuitem"
 												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 											>
-												{subItem.name}
+												{t.nav[subItem.link] ?? subItem.name}  
 											</a>
 										</li>
 									))}
@@ -103,17 +130,31 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Theme Switcher -->
 			<Switcher />
 
+
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
-				{
-					savedNavActions.map((action) => (
-						<a href={action.link} class="flex-auto">
-										<Button size={action.size} style={action.style}>
-											{action.name}
-										</Button>
-									</a>					))
-				}
+			<a
+				href={otherLangHref}
+				class="header__lang"
+				aria-label={isEnglish ? 'Přepnout na češtinu' : 'Switch to English'}
+				title={isEnglish ? 'Čeština' : 'English'}
+			>
+				<span aria-hidden="true" class="leading-none text-xl">
+				{isEnglish ? '🇬🇧' : '🇨🇿'}
+				</span>
+			</a>
+
+			{
+				savedNavActions.map((action) => (
+				<a href={action.link} class="flex-auto">
+					<Button size={action.size} style={action.style}>
+					{t.nav[action.name] ?? action.name}		
+					</Button>
+				</a>
+				))
+			}
 			</div>
+
 		</nav>
 	</div>
 </header>
@@ -179,4 +220,7 @@ const savedNavActions = navActions.map((action) => ({
 	.header__actions {
 		@apply fixed bottom-0 left-0 hidden w-full items-center justify-between gap-4 border-t border-neutral-100 bg-white px-6 py-4 lg:relative lg:ml-auto lg:flex lg:w-auto lg:border-none lg:bg-transparent lg:px-0 lg:py-0 dark:border-neutral-800 dark:bg-neutral-950 lg:dark:bg-transparent [.header\_\_menu--open~&]:flex;
 	}
+	.header__lang {
+		@apply inline-flex h-10 w-10 items-center justify-center rounded-lg transition-colors duration-200 hover:bg-neutral-100 dark:hover:bg-neutral-800;
+    }
 </style>

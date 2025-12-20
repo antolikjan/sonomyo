@@ -38,12 +38,13 @@ export const navigationBarData: NavData = {
 		text: ''
 	},
 	navItems: [
-		{ name: 'Home', link: '/' },
-		{ name: 'Pricing', link: '/pricing' },
-	    { name: 'Blog', link: '/blog' },
-		{ name: 'FAQ', link: '/faq' },
-		{ name: 'About', link: '/about' },
-		{ name: 'Contact', link: '/contact' }
+		{ name: 'navHome', link: '/' },
+		{ name: 'navPricing', link: '/pricing' },
+	    { name: 'navBlog', link: '/blog' },
+		{ name: 'navFaq', link: '/faq' },
+		{ name: 'navAbout', link: '/about' },
+		{ name: 'navContact', link: '/contact' }
 	],
 	navActions: [{ name: 'Book appointment', link: '/contact', style: 'primary', size: 'lg' }]
 }
+1920

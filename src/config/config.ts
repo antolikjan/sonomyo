@@ -24,7 +24,7 @@ export const configData: Config = {
 	siteTitle: 'Sonoymyo. Ultasound guided myfunctional therapy.',
 	siteDescription:
 		'Sonomyo is a myfunctional therapy practice using ultrasound as biofeedback for speeding up and ehancing the therapy progress.',
-	ogImage: '/og.jpg',
+	ogImage: '/favicon.svg',
 	logo: {
 		src: '/sonomyo_logo_en.svg',
 		alt: 'Sonomyo'

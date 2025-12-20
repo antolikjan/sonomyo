@@ -100,3 +100,17 @@ main a {
     @apply text-primary-600/60;
   }
 }
+
+@layer components {
+  /* Justify markdown/rich text paragraphs on md+ screens */
+  .prose p {
+    @apply md:text-justify;
+  }
+}
+
+@layer components {
+  .prose {
+    @apply leading-relaxed;
+    hyphens: auto;
+  }
+}

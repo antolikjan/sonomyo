@@ -21,4 +21,13 @@ export default defineConfig({
       },
     }),
   ],
+  i18n: {
+    defaultLocale: 'cs',
+    locales: ['cs', 'en'],
+    routing: {
+      prefixDefaultLocale: false, // option A: cs has no prefix, en does
+    },
+  },
+
+
 });
