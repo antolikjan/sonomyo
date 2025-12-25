@@ -1,0 +1,48 @@
+---
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/HomeCTA.astro'
+import Features from '../../components/blocks/features/FeatureCards.astro'
+import Testimonial from '../../components/blocks/testimonials/BasicDark.astro'
+import HighlightBlock from '../../components/blocks/highlights/HightlightRow.astro'
+import CTA from '../../components/blocks/CTA/BasicDark.astro'
+import { ui } from '../../i18n/ui'
+
+// Content
+// - Testimonial background
+import testimonialBackground from '../../assets/backgrounds/main.png'
+import portable_ultrasound from '../../assets/images/portable_ultrasound.png'
+import smiling_girl from '../../assets/images/smiling_girl.png'
+
+// - SEO
+const SEO = {
+	title: 'Sonomyo | Ulrasound guided myofunctional therapy practice.',
+	description:
+		'Sonomyo is a ulrasound guided myofunctional therapy practice.'
+}
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const t = ui[lang].index
+
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<HighlightBlock image={smiling_girl} title={t["about_title"]} text={t["about_text"]} />
+	<HighlightBlock image={portable_ultrasound} title={t["difference_title"]} text={t["difference_text"]} imagePosition='left' />
+
+	<!--  <Hero />
+	<Features />
+	<Testimonial bg={testimonialBackground} bgPosition="right" />
+	<HighlightBlocks />
+	<CTA />  -->
+</Layout>

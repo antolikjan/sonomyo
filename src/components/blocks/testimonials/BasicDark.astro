@@ -1,42 +1,102 @@
 ---
-// Basic Dark Testimonial section
-// ------------
-// Description: A centered testimonial section that contains: a quote, a caption and a cite in a dark section with a background image.
-
-// Components
-// - Layout
 import Section from '../../ui/Section.astro'
 import Row from '../../ui/Row.astro'
 import Col from '../../ui/Col.astro'
-// - UI
 import Testimonial from '../../ui/Testimonial.astro'
+import { Icon } from 'astro-icon/components'
+import Button from '../../ui/Button.astro'
 
-// Props
+import { ui } from '../../../i18n/ui'
+import { getLangFromParams,localizePath } from '../../../i18n/utils'
+
+const lang = getLangFromParams(Astro.params)
+const t = ui[lang]
+const contact_path = localizePath('/contact',lang)
+
 type Props = {
-	blockquote?: string
-	figcaption?: string
-	cite?: string
-	bg?: any
-	bgPosition?: 'left' | 'right' | 'center'
+  blockquote?: string
+  figcaption?: string
+  cite?: string
+  bg?: any
+  bgPosition?: 'left' | 'right' | 'center'
 }
+
 const {
-	blockquote = 'Myofunctional Therapy is the specialty dedicated to the rehabilitation of neuromuscular dysfunctions in the orofacial structure, related to speech, swallowing, chewing and breathing.',
-	figcaption = 'Sheryl Sandberg',
-	cite = 'CEO, Facebook',
-	bg,
-	bgPosition = 'center'
+  blockquote = t.index['topblurb'],
+  figcaption = '',
+  cite = '',
+  bg,
+  bgPosition = 'center'
 } = Astro.props
 ---
-
 <Section
-	id="testimonial"
-	mode="dark"
-	bg={bg}
-	bgPosition={bgPosition}
-	classes="dark:border-t border-y border-neutral-800"
+  id="testimonial"
+  mode="light"
+  bg={bg}
+  bgPosition={bgPosition}
+  classes="border-y border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-neutral-50"
 >
-	<Row>
-		<Col span="12">
-		</Col>
-	</Row>
+
+  <Row>
+    <Col span="12">
+      <!-- Title / Testimonial -->
+      <div class="relative z-10">
+        <Testimonial
+          blockquote={blockquote}
+          figcaption={figcaption}
+          cite={cite}
+          align="center"
+          size="4xl"
+          mobileSize="2xl"
+          classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto !text-neutral-900 !opacity-100 dark:!text-neutral-50"
+          quoteSize={112}
+        />
+      </div>
+
+	  </br></br></br></br>
+
+      <!-- Rezervace button: closer to panels than title -->
+      <div class="mt-4 flex justify-center">
+					
+			<a href={} class="flex-auto inline-flex items-center justify-center text-white">
+					<Button size='lg' style='primary'>
+					{t.index['book']}		
+					</Button>
+			</a>	
+      </div>
+
+      <!-- Two contact options -->
+      <div class="mt-6 grid gap-8 md:grid-cols-2 max-w-4xl mx-auto">
+        <!-- Item 1 -->
+        <div class="flex flex-col items-center text-center gap-0.5">
+          <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white/70 ring-1 ring-neutral-900/10 backdrop-blur dark:bg-neutral-900/40 dark:ring-white/10">
+            <Icon name="computer-desktop" class="h-8 w-8 text-primary-600 dark:text-primary-300" />
+          </div>
+
+          <h3 class="m-0 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
+            {t.index['remote_consultation_title']}
+          </h3>
+
+          <p class="m-0 text-sm text-neutral-700 dark:text-neutral-300 leading-tight">
+            {t.index['remote_consultation_text']}
+          </p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="flex flex-col items-center text-center gap-0.5">
+          <div class="flex h-16 w-16 items-center justify-center rounded-full bg-white/70 ring-1 ring-neutral-900/10 backdrop-blur dark:bg-neutral-900/40 dark:ring-white/10">
+            <Icon name="office" class="h-8 w-8 text-primary-600 dark:text-primary-300" />
+          </div>
+
+          <h3 class="m-0 text-xl font-semibold text-neutral-900 dark:text-neutral-50">
+            {t.index['inperson_consultation_title']}
+          </h3>
+
+          <p class="m-0 text-sm text-neutral-700 dark:text-neutral-300 leading-tight">
+            {t.index['inperson_consultation_text']}
+          </p>
+        </div>
+      </div>
+    </Col>
+  </Row>
 </Section>

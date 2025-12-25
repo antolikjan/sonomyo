@@ -17,18 +17,13 @@ import { Icon } from 'astro-icon/components'
 import Button from './Button.astro'
 import Switcher from './ModeSwitcher.astro'
 import { ui } from '../../i18n/ui'
-import { getLangFromUrl, localizePath } from '../../i18n/utils'
+import { getLangFromParams, localizePath } from '../../i18n/utils'
 
 // Data
 import { navigationBarData } from '../../config/navigationBar'
 const { logo, navItems, navActions } = navigationBarData
 
 const path = new URL(Astro.request.url).pathname
-const lang = getLangFromUrl(path)
-const t = ui[lang]
-
-// helper for localized hrefs
-const href = (p: string) => localizePath(p, lang)
 
 function isActivePath(currentPath: string): boolean {
   // compare with localized path
@@ -40,18 +35,12 @@ function isActivePath(currentPath: string): boolean {
  *  - cs is default: /...
  *  - en is prefixed: /en/...
  */
-const isEnglish = path === '/en' || path.startsWith('/en/')
+const lang = getLangFromParams(Astro.params)
+const t = ui[lang]
 
-function switchLangPath(pathname: string): string {
-	// If on /en/... go to non-prefixed version
-	if (pathname === '/en') return '/'
-	if (pathname.startsWith('/en/')) return pathname.replace('/en', '')
-
-	// Otherwise go to English version
-	return pathname === '/' ? '/en' : `/en${pathname}`
-}
-
-const otherLangHref = switchLangPath(path)
+const href = (p: string) => localizePath(p, lang)
+const otherLang = lang === 'en' ? 'cs' : 'en'
+const switchLangHref = localizePath(Astro.url.pathname.replace(/^\/(cs|en)/, ''), otherLang)
 
 // Type assertion for navActions to ensure type safety
 const savedNavActions = navActions.map((action) => ({
@@ -92,7 +81,7 @@ const savedNavActions = navActions.map((action) => ({
 
 							{!item.submenu ? (
 								<a
-									href={item.link}
+									href={localizePath(item.link, lang)}
 									role="menuitem"
 									class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 								>
@@ -112,7 +101,7 @@ const savedNavActions = navActions.map((action) => ({
 									{item.submenu.map((subItem) => (
 										<li role="none" class="header__submenu-item">
 											<a
-												href={subItem.link}
+												href={localizePath(subItem.link, lang)}
 												role="menuitem"
 												class={`header__menu-link ${isActivePath(item.link) ? 'active' : ''}`}
 											>
@@ -134,13 +123,13 @@ const savedNavActions = navActions.map((action) => ({
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 			<a
-				href={otherLangHref}
+				href={switchLangHref}
 				class="header__lang"
-				aria-label={isEnglish ? 'Přepnout na češtinu' : 'Switch to English'}
-				title={isEnglish ? 'Čeština' : 'English'}
+				aria-label={lang === 'en' ? 'Přepnout na češtinu' : 'Switch to English'}
+				title={lang === 'en' ? 'Čeština' : 'English'}
 			>
 				<span aria-hidden="true" class="leading-none text-xl">
-				{isEnglish ? '🇬🇧' : '🇨🇿'}
+				{lang === 'en' ? '🇨🇿' : '🇬🇧' }
 				</span>
 			</a>
 

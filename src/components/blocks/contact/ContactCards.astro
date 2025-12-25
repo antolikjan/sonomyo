@@ -13,8 +13,6 @@ import Col from '../../ui/Col.astro'
 // - UI
 import Card from '../../ui/cards/BasicCard.astro'
 import { ui } from '../../../i18n/ui'
-import { getLangFromUrl, localizePath } from '../../../i18n/utils'
-
 
 // 	Props
 type Props = {
@@ -23,20 +21,20 @@ type Props = {
 const { classes } = Astro.props
 
 const path = new URL(Astro.request.url).pathname
-const lang = getLangFromUrl(path)
-const t = ui[lang]
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const t = ui[lang].contact
 ---
-
+<span>t.nav["SM"]</span>
 <Section id="requests" classes={classes}>
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-balance">Other contact options:</h2>
+			<h2 class="text-balance">{t["oco"]}</h2>
 		</Col>
 	</Row>
 	<Row>
 		<Col span="3">
 			<Card
-				title={t.nav["Phone"]}
+				title={t["Phone"]}
 				subtitle={`+420 732 171 923\n\n\n `}
 				icon="phone"
 				classes="text-center dark:!bg-neutral-800/50"
@@ -54,7 +52,7 @@ const t = ui[lang]
 		</Col>
 		<Col span="3">
 			<Card
-				title={t.nav["Email"]}
+				title={t["Address"]}
 				subtitle={`V Podhoří 761/3e\n17100 Prague 7\nCzech Republic`}
 				icon="mail"
 				classes="text-center dark:!bg-neutral-800/50"
@@ -63,8 +61,8 @@ const t = ui[lang]
 		</Col>
 		<Col span="3" classes="flex flex-col gap-6">
 			<Card
-				title={t.nav["SM"]}
-				subtitle={`Feel free to contact us on any of the social media at the bottom of the page.\n\n `}
+				title={t["SM"]}
+				subtitle={t["SMblurb"]}
 				icon="message"
 				classes="text-center dark:!bg-neutral-800/50"
 				link="/contact"

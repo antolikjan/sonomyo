@@ -21,32 +21,27 @@ import { Icon } from 'astro-icon/components'
 import Rating from './Rating.astro'
 import Avatar from './Avatar.astro'
 
+import { ui } from '../../i18n/ui'
+import { getLangFromParams, localizePath } from '../../i18n/utils'
+
+
+const lang = getLangFromParams(Astro.params)
+const t = ui[lang]
+
 // Props
 type Props = {
 	blockquote: string
-	figcaption: string
-	cite?: string
-	link?: string
-	avatar?: any
 	size?: string
 	mobileSize?: string
 	align?: 'left' | 'center'
-	rating?: 0 | 1 | 2 | 3 | 4 | 5
-	quoteSize?: number
 	classes?: string
 }
 const {
 	blockquote,
-	figcaption,
-	cite,
-	avatar,
 	size = 'base',
 	mobileSize = size,
-	rating,
 	align = 'left',
-	link,
 	classes,
-	quoteSize = 64
 } = Astro.props
 ---
 
@@ -66,39 +61,7 @@ const {
 					{blockquote}
 				</p>
 			</blockquote>
-			<figcaption class="testimonial__figcaption">
-				{rating && <Rating rating={rating} />}
-				<div class="testimonial__figcaption-container">
-					{
-						avatar && (
-							<Avatar
-								size="lg"
-								image={avatar}
-								radius="rounded-full"
-								classes="cursor-default max-w-full shrink-0"
-							/>
-						)
-					}
-					<div class="testimonial__figcaption-cite-container">
-						<span class="testimonial__figcaption--credit">{figcaption}</span>
-						{
-							cite && (
-								<cite class="testimonial__figcaption--cite">
-									{link ? <a href={link}>{cite}</a> : <span>{cite}</span>}
-								</cite>
-							)
-						}
-					</div>
-				</div>
-			</figcaption>
 		</figure>
-		<Icon
-			name="quotes"
-			class="testimonial--quote"
-			size={quoteSize}
-			width={quoteSize}
-			height={quoteSize}
-		/>
 	</div>
 </div>
 
@@ -119,7 +82,7 @@ const {
 		@apply relative z-10;
 	}
 	.testimonial__blockquote {
-		@apply p-6 [&>p]:text-neutral-500 dark:[&>p]:text-neutral-300;
+		@apply p-6 [&>p]:text-neutral-500 dark:[&>p]:text-primary-900;
 	}
 	.testimonial__figcaption {
 		@apply flex flex-col items-center gap-4 p-6 pt-2 text-sm leading-normal text-neutral-700 dark:text-neutral-50;

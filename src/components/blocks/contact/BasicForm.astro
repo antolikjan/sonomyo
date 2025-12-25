@@ -15,31 +15,36 @@ import FormField from '../../ui/forms/partials/FormField.astro'
 import InputField from '../../ui/forms/form-elements/InputField.astro'
 import TextArea from '../../ui/forms/form-elements/TextArea.astro'
 import Button from '../../ui/Button.astro'
+import { ui } from '../../../i18n/ui'
 
 // Props
 type Props = {
 	classes?: string
 }
 const { classes } = Astro.props
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const t = ui[lang].contact
+
 ---
 
 <Card classes={classes}>
 	<CardBody>
 		<Form   method="post" action="https://api.web3forms.com/submit" id="contact-form" classes="space-y-6">
 			<input type="hidden" name="access_key" value="6dd02420-b47e-485a-a40e-69beff6adc8d" />
-			<h2 class="text-2xl">Get in Touch</h2>
+			<h2 class="text-2xl">{t["GiT"]}</h2>
 			<FormField>
-				<InputField type="text" id="firstName" label="First Name" />
-				<InputField type="text" id="lastName" label="Last Name" />
+				<InputField type="text" id="firstName" label={t["firstN"]}/>
+				<InputField type="text" id="lastName" label={t["lastN"]}/>
 			</FormField>
 			<FormField>
-				<InputField type="email" id="email" label="Email" required value="name@youremail.com" />
+				<InputField type="email" id="email" label="Email" required value={t["example_email"]} />
 			</FormField>
 			<FormField>
-				<InputField type="tel" id="phone" label="phone number" />
+				<InputField type="tel" id="phone" label={t["phone_number"]} />
 			</FormField>
-			<FormField><TextArea id="message" label="Your Message" /></FormField>
-			<Button style="primary" type="submit">Submit</Button>
+			<FormField><TextArea id="message" label={t["YourMessage"]}/></FormField>
+			<Button style="primary" type="submit">{t["Submit"]}</Button>
 		</Form>
 	</CardBody>
 </Card>

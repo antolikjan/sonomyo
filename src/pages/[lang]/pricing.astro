@@ -1,0 +1,41 @@
+---
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import Price from '../../components/blocks/pricing/PricingColumns.astro'
+import SocialProof from '../../components/blocks/socialproof/Basic.astro'
+import FAQ from '../../components/blocks/FAQ/Basic.astro'
+import Testimonial from '../../components/blocks/testimonials/BasicDark.astro'
+import Feature from '../../components/blocks/features/FeatureList.astro'
+import CTA from '../../components/blocks/CTA/BasicDark.astro'
+
+// Content
+// - SEO
+const SEO = {
+	title: 'Sonomyo | check out our pricing',
+	description:
+		'The pricing of services provided by the Sonomyo myfunctional therapy practice.'
+}
+// - Page Header
+const header = {
+	title: 'Prices of our services:',
+	text: 'We guarentee the service prices for the duration of your therapy.'
+}
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={header.title} text={header.text} />
+	<Price />
+</Layout>
