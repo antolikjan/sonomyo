@@ -102,7 +102,7 @@ export const ui = {
                       "poor posture",
                       "improvement of oral microbiome",
                       "lower dental caries"
-                    ] as String[],
+                    ] as string[],
       'help_adults' : [
                         "mouth breathing",
                         "prevention of relapse in orthodontic care",
@@ -112,7 +112,7 @@ export const ui = {
                         "improvement of oral microbiome",
                         "reduction of dental caries",
                         "improvement of pronunciation in foreign languages"
-                      ] as String[],
+                      ] as string[],
       'promise_title' : 'Our pormise',
       'promise_text' : '• A supportive, judgment-free environment<br>• Clear goals and measurable progress<br>• Practical home practice with coaching and accountability'
 
