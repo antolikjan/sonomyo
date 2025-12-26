@@ -1,130 +1,264 @@
-[
-	{
-		"header": {
-			"title": "Entry evaluation",
-			"subtitle": "Comprehensive evaluation during the first visit.",
-			"currency": "Kč",
-			"price": "900"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Tongue position at rest" },
-				{ "listItem": "Tongue mobility" },
-				{ "listItem": "Lips mobility" },
-				{ "listItem": "Mouth breathing" },
-				{ "listItem": "Pronunciation of speech sounds" }
+{ 
+	"en" :
+				[
+				{
+					"header": {
+						"title": "Entry evaluation",
+						"subtitle": "Comprehensive evaluation during the first visit.",
+						"currency": "Kč",
+						"price": "900"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Tongue position at rest" },
+							{ "listItem": "Tongue mobility" },
+							{ "listItem": "Lips mobility" },
+							{ "listItem": "Mouth breathing" },
+							{ "listItem": "Pronunciation of speech sounds" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Practice session (30m)",
+						"subtitle": "Single practice session lasting 30 minutes.",
+						"currency": "Kč",
+						"price": "400"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Oral muscle exercises" },
+							{ "listItem": "Myofunctional therapy MFT sTArs 4 - 8 years and 9 – 99 years" },
+							{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Practice session (60m)",
+						"subtitle": "Single practice session lasting 30 minutes.",
+						"currency": "Kč",
+						"price": "700"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Oral muscle exercises" },
+							{ "listItem": "Myofunctional therapy MFT sTArs 4 - 8 years and 9 – 99 years" },
+							{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Package of 10 (60m)",
+						"subtitle": "Package of 10 60-minute practice session.",
+						"currency": "Kč",
+						"price": "6000"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Oral muscle exercises" },
+							{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+							{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Package of 10 (30m)",
+						"subtitle": "Package of 10 30-minute practice session.",
+						"currency": "Kč",
+						"price": "3000"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Oral muscle exercises" },
+							{ "listItem": "Myofunctional therapy MFT sTArs 4 - 8 years and 9 – 99 years" },
+							{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
+							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Proffesional consultancy",
+						"subtitle": "Tap into my 15 years of research experience.",
+						"currency": "Kč/hour",
+						"price": "1500"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Usage of ultrasound tongue imaging in speech therapy or foreign language learning" },
+							{ "listItem": "Interpretation of ultrasound images of the tongue" },
+							{ "listItem": "Articulation: speech sound production and evaluation" },
+							{ "listItem": "Speech disorders in children and adults" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				 }
+			    ],
+	 "cs" :
+				[
+			 	 {
+					"header": {
+						"title": "Vstupní prohlídka",
+						"subtitle": "Komplexní vyšetření počas první návštěvy.",
+						"currency": "Kč",
+						"price": "900"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Pozice jazyka v klidu" },
+							{ "listItem": "Mobilita jazyka" },
+							{ "listItem": "Mobilita per" },
+							{ "listItem": "Dýchání ústami" },
+							{ "listItem": "Výslovnost foném" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Kontrolní prohlídka (30m)",
+						"subtitle": "Prohlíkda a nácvik trvající 30 minut.",
+						"currency": "Kč",
+						"price": "400"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Nácvik orálních svalů" },
+							{ "listItem": "Myofunkční terapie MFT sTArs 4 - 8 let a 9 – 99 let" },
+							{ "listItem": "Nácvik výslovnosti pomocí ultrazvukové spětné vazby" },
+							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Kontrolní prohlídka (60m)",
+						"subtitle": "Prohlíkda a nácvik trvající 60 minut.",
+						"currency": "Kč",
+						"price": "700"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Nácvik orálních svalů" },
+							{ "listItem": "Myofunkční terapie MFT sTArs 4 - 8 let a 9 – 99 let" },
+							{ "listItem": "Nácvik výslovnosti pomocí ultrazvukové spětné vazby" },
+							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Balíček 10 prohlídek (30m)",
+						"subtitle": "Package of 10 30-minute practice session.",
+						"currency": "Kč",
+						"price": "3000"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Nácvik orálních svalů" },
+							{ "listItem": "Myofunkční terapie MFT sTArs 4 -8 let a 9 – 99 let" },
+							{ "listItem": "Nácvik výslovnosti pomocí ultrazvukové spětné vazby" },
+							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Balíček 10 prohlídek (60m)",
+						"subtitle": "Package of 10 60-minute practice session.",
+						"currency": "Kč",
+						"price": "6000"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Nácvik orálních svalů" },
+							{ "listItem": "Myofunkční terapie MFT sTArs 4 -8 let a 9 – 99 let" },
+							{ "listItem": "Nácvik výslovnosti pomocí ultrazvukové spětné vazby" },
+							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				},
+				{
+					"header": {
+						"title": "Konzultace",
+						"subtitle": "Využijte 20 let mých zkušeností ve vízkume řeči.",
+						"currency": "Kč/hod",
+						"price": "1500"
+					},
+					"body": {
+						"listItems": [
+							{ "listItem": "Využití ultrazvuku v logopedii a učení cizích jazyků" },
+							{ "listItem": "Interpretace dat z ultrazvukového snímání jazyka." },
+							{ "listItem": "Artikulace: produkce rečovích zvuků a jejich evaluace" },
+							{ "listItem": "Řečové poruchy u dětí a dospělích" }
+						]
+					},
+					"footer": {
+						"buttonName": "FAQ",
+						"buttonLink": "/faq"
+					},
+					"type": "basic"
+				}
+	
 			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Practice session (30m)",
-			"subtitle": "Single practice session lasting 30 minutes.",
-			"currency": "Kč",
-			"price": "400"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Oral muscle exercises" },
-				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
-				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
-				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Practice session (60m)",
-			"subtitle": "Single practice session lasting 30 minutes.",
-			"currency": "Kč",
-			"price": "700"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Oral muscle exercises" },
-				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
-				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
-				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Package of 10 (60m)",
-			"subtitle": "Package of 10 60-minute practice session.",
-			"currency": "Kč",
-			"price": "6000"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Oral muscle exercises" },
-				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
-				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
-				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Package of 10 (30m)",
-			"subtitle": "Package of 10 30-minute practice session.",
-			"currency": "Kč",
-			"price": "3000"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Oral muscle exercises" },
-				{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
-				{ "listItem": "Pronunciation practice with ultrasound tongue imaging" },
-				{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	},
-	{
-		"header": {
-			"title": "Consultancy",
-			"subtitle": "Tap into my 15 years of research experience.",
-			"currency": "Kč/hod",
-			"price": "1500"
-		},
-		"body": {
-			"listItems": [
-				{ "listItem": "Usage of ultrasound tongue imaging in speech therapy or foreign language learning" },
-				{ "listItem": "Interpretation of ultrasound images of the tongue" },
-				{ "listItem": "Articulation: speech sound production and evaluation" },
-				{ "listItem": "Speech disorders in children and adults" }
-			]
-		},
-		"footer": {
-			"buttonName": "FAQ",
-			"buttonLink": "/faq"
-		},
-		"type": "basic"
-	}
-
-]
+}
+			

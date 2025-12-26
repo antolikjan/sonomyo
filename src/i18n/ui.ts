@@ -6,7 +6,7 @@ export const languages = {
 export const ui = {
   cs: {
     index : {
-      'topblurb' : 'Myfunkční terapie pomocí ultrazvukového bio-feedbacku.',
+      'topblurb' : 'Myofunkční terapie pomocí ultrazvukového bio-feedbacku',
       'book' : 'Rezervace',
       'about_title' : '<strong>SonoMyo</strong>: jazyk na správném místě.',
       'about_text' : 'Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové vzorce úst a jayzka ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám (nebo vašemu dítěti) vybudovat si zdravé motorické návyky jazyka a úst, které vydrží – krok za krokem a s povzbuzením na cestě.',
@@ -15,7 +15,33 @@ export const ui = {
       'inperson_consultation_title' : 'Osobně',
       'inperson_consultation_text' : 'Přijďte za námi do ordinace.',
       'difference_title' : 'Čím se odlišujeme?',
-      'difference_text' : '<strong>SonoMyo</strong> je první a jediná praxe v Čechách, která využívá <strong>ultrazvukový biofeedback</strong> k vedení terapie, jejímu urychlení a zvýšení její účinnosti. \n\n Ultrazvuk vám umožňuje <strong>vidět pohyb jazyka v reálném čase<strong>, takže nemusíte hádat, zda cvik provádíte správně. Tato vizuální zpětná vazba pomáhá se naučit správné motorické návyky rychleji a přesněji – podporuje <strong>lepší držení jazyka, dýchací návyky, polykání a srozumitelnou řeč<strong>. \n\n Ultrazvuk je jemný, bezpečný a neinvazivní: malá sonda spočívá pod bradou, zatímco vás krok za krokem vedeme. \n\n Mám 20 let zkušeností s výzkumem ultrazvukem řízené biofeedbacku v logopedii a artikulačním tréninku a jeho účinnost jsem prokázala v řadě studií. Se SonoMio vám přináším tento špičkový terapeutický přístup. \n\n <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> \n\n Logopedistka a certifikovaná myofunkční terapeutka.'
+      'difference_text' : '<strong>SonoMyo</strong> je první a jediná praxe v Čechách, která využívá <strong>ultrazvukový biofeedback</strong> k vedení terapie, jejímu urychlení a zvýšení její účinnosti. </br></br> Ultrazvuk vám umožňuje <strong>vidět pohyb jazyka v reálném čase</strong>, takže nemusíte hádat, zda cvik provádíte správně. Tato vizuální zpětná vazba pomáhá se naučit správné motorické návyky rychleji a přesněji – podporuje <strong>lepší držení jazyka, dýchací návyky, polykání a srozumitelnou řeč</strong>. <br><br> Ultrazvuk je jemný, bezpečný a neinvazivní: malá sonda spočívá pod bradou, zatímco vás krok za krokem vedeme. <br><br> Mám 20 let zkušeností s výzkumem ultrazvukem řízené biofeedbacku v logopedii a artikulačním tréninku a jeho účinnost jsem prokázala v řadě studií. Se SonoMio přináším tento špičkový terapeutický přístup svím klientům. </br></br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Logoped a certifikovaná myofunkční terapeutka.</em>',
+      'help_title' : 'Jaké problémy řešíme?' ,
+      'help_kids_title' : 'Děti',
+      'help_adults_title' : 'Dospělí',
+      'help_kids' : [
+                      "nevhodné ústní dýchání",
+                      "předcházení rovnátkům",
+                      "prevence relapsu v ortodontické péči",
+                      "flexibilita podjazykové uzdiček",
+                      "podpora logopedické terapie",
+                      "skřípání zuby (bruxismus)",
+                      "špatné držení těla",
+                      "zlepšení orálního mikrobiomu",
+                      "nižší kazivost chrupu"
+                    ], 
+      'help_adults' : [
+                       "nevhodné ústní dýchání",
+                       "prevence relapsu v ortodontické péči",
+                       "bolesti čelistních kloubů, zad a hlavy",
+                       "chrápání a spánková apno",
+                       "bruxismus, zatínání zubů|",
+                       "zlepšení orálního mikrobiomu",
+                       "snížení kazivosti chrupu",
+                       "zlepšení výslovnosti v cizích jazycích"
+                      ],
+      'promise_title' : 'Náš příslib Vám',
+      'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
     },
     about : {
         'description' : 'Vědec zabívající se řečí a myofunkční terapeut působící v Praze a Lublani.'
@@ -45,12 +71,15 @@ export const ui = {
         '/faq': 'FAQ',
         '/contact': 'Kontakt',
         '/about': 'O mně',
+        '/services/myofunctional-therapy' : 'Myfunkční terapie',
+        '/services/ultrasound-biofeedback' : "Ultrazvukový feedback",
         'Book appointment' : 'Objednat termín',
+        '/services' : 'Služby',
     } as Record<string, string>,
   },
   en: {
     index : {
-      'topblurb' : 'Ultrasound bio-feedback aided myofunctional therapy.',
+      'topblurb' : 'Ultrasound bio-feedback aided myofunctional therapy',
       'book' : 'Book appointment',
       'about_title' : '<strong>SonoMyo</strong>: tongue in the right place',
       'about_text' : 'Many people are surprised to learn how much everyday habits and muscle patterns of mouth and tongue can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy mouth and tongue muscle habits that last—one step at a time, with plenty of encouragement along the way.',
@@ -59,7 +88,34 @@ export const ui = {
       'inperson_consultation_title' : 'In person',
       'inperson_consultation_text' : 'Come to our practice.',
       'difference_title' : 'How are we different?',
-      'difference_text' : '<strong>SonoMyo</strong> is the first and only practice in the Czech Republic utilising <strong>ultrasound biofeedback</strong> to guide therapy, speeding it up and increasing its effectiveness. \n\n Ultrasound lets you <strong>see your tongue move in real time<strong>, so you don’t have to guess whether you’re doing an exercise correctly. This visual feedback helps patterns “click” faster—supporting <strong>better tongue posture, breathing habits, swallowing, and clear speech <strong>. \n\n Ultrasound is gentle, safe, and non-invasive: a small probe rests under the chin while we coach you step-by-step. \n\n I have 20 year experience in researching ultrasound guided bio-feedback in speech therapy and articulation training, having shown its efficacy in multiple studies. With SonoMio I am bringing this cutting edge therapy approach to you. \n\n <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> \n\n Speech scientists and certified myofunctional therapist.'
+      'difference_text' : '<strong>SonoMyo</strong> is the first and only practice in the Czech Republic utilising <strong>ultrasound biofeedback</strong> to guide therapy, speeding it up and increasing its effectiveness. <br><br> Ultrasound lets you <strong>see your tongue move in real time</strong>, so you don’t have to guess whether you’re doing an exercise correctly. This visual feedback helps patterns “click” faster—supporting <strong>better tongue posture, breathing habits, swallowing, and clear speech </strong>. <br><br> Ultrasound is gentle, safe, and non-invasive: a small probe rests under the chin while we coach you step-by-step. <br><br> I have 20 year experience in researching ultrasound guided bio-feedback in speech therapy and articulation training, having shown its efficacy in multiple studies. With SonoMio I am bringing this cutting edge therapy approach to you. <br><br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Speech scientists and certified myofunctional therapist.</em>',
+      'help_title' : 'Which problems do we address?' ,
+      'help_kids_title' : 'Children',
+      'help_adults_title' : 'Adults',
+      'help_kids' : [
+                      "mouth breathing",
+                      "prevention of braces",
+                      "prevention of relapse in orthodontic care",
+                      "flexibility of sublingual frenulum",
+                      "support of speech therapy",
+                      "teeth grinding (bruxism)",
+                      "poor posture",
+                      "improvement of oral microbiome",
+                      "lower dental caries"
+                    ],
+      'help_adults' : [
+                        "mouth breathing",
+                        "prevention of relapse in orthodontic care",
+                        "jaw joint, back and headache pain",
+                        "snoring and sleep apnea",
+                        "bruxism, teeth clenching",
+                        "improvement of oral microbiome",
+                        "reduction of dental caries",
+                        "improvement of pronunciation in foreign languages"
+                      ],
+      'promise_title' : 'Our pormise',
+      'promise_text' : '• A supportive, judgment-free environment<br>• Clear goals and measurable progress<br>• Practical home practice with coaching and accountability'
+
     },
     about : {
         'description' :'Speech scientists and myfunctional therapist based in Prague and Ljubljana.'
@@ -89,6 +145,9 @@ export const ui = {
         '/faq': 'FAQ',
         '/contact': 'Contact',
         '/about': 'About',
+        '/services/myofunctional-therapy' : 'Myofunctional Therapy',
+        '/services/ultrasound-biofeedback' : "Ultrasound Feedback",
+        '/services' : 'Services',
         'Book appointment': 'Book appointment',
     } as Record<string, string>,
   },

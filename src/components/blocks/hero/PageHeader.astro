@@ -31,10 +31,14 @@ const { id = 'intro', title, text, classes } = Astro.props
 </Section>
 
 <style>
-	.page-header {
-		@apply mx-auto max-w-3xl;
-	}
-	.page-header__text {
-		@apply text-lg leading-relaxed;
-	}
-</style>
+.page-header {
+  @apply mx-auto max-w-3xl;
+}
+
+.page-header__title {
+  @apply text-primary-700;
+}
+
+.page-header__text {
+  @apply text-lg leading-relaxed;
+}</style>

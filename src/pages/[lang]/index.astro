@@ -6,7 +6,8 @@ import Layout from '../../layouts/Layout.astro'
 import Hero from '../../components/blocks/hero/HomeCTA.astro'
 import Features from '../../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlock from '../../components/blocks/highlights/HightlightRow.astro'
+import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
+import HighlightPair from '../../components/blocks/highlights/HighlightPair.astro'
 import CTA from '../../components/blocks/CTA/BasicDark.astro'
 import { ui } from '../../i18n/ui'
 
@@ -15,6 +16,9 @@ import { ui } from '../../i18n/ui'
 import testimonialBackground from '../../assets/backgrounds/main.png'
 import portable_ultrasound from '../../assets/images/portable_ultrasound.png'
 import smiling_girl from '../../assets/images/smiling_girl.png'
+import blue_girl from '../../assets/images/blue_girl.png'
+import blue_boy from '../../assets/images/blue_boy.png'
+import handshake from '../../assets/images/handshake.png'
 
 // - SEO
 const SEO = {
@@ -38,11 +42,22 @@ const t = ui[lang].index
 <Layout title={SEO.title} description={SEO.description}>
 	<Testimonial bg={testimonialBackground} bgPosition="right" />
 	<HighlightBlock image={smiling_girl} title={t["about_title"]} text={t["about_text"]} />
+
+	<HighlightPair id="problems" title={t["help_title"]}
+	left={{
+		title: t["help_kids_title"],
+		image: blue_boy,
+		items: t["help_kids"]
+	}}
+	right={{
+		title: t["help_adults_title"],
+		image: blue_girl,
+		items: t["help_adults"],
+	}}
+	/>		
+	
 	<HighlightBlock image={portable_ultrasound} title={t["difference_title"]} text={t["difference_text"]} imagePosition='left' />
 
-	<!--  <Hero />
-	<Features />
-	<Testimonial bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
-	<CTA />  -->
+	<HighlightBlock image={handshake} title={t["promise_title"]} text={t["promise_text"]} bgColor='#d4e6fe'} />
+
 </Layout>

@@ -20,6 +20,7 @@
 import { Icon } from 'astro-icon/components'
 import Rating from './Rating.astro'
 import Avatar from './Avatar.astro'
+import Button from './Button.astro'
 
 import { ui } from '../../i18n/ui'
 import { getLangFromParams, localizePath } from '../../i18n/utils'
@@ -57,6 +58,7 @@ const {
 	<div class="testimonial__container">
 		<figure class="testimonial__figure">
 			<blockquote class="testimonial__blockquote">
+				
 				<p>
 					{blockquote}
 				</p>
@@ -82,7 +84,7 @@ const {
 		@apply relative z-10;
 	}
 	.testimonial__blockquote {
-		@apply p-6 [&>p]:text-neutral-500 dark:[&>p]:text-primary-900;
+		@apply p-6 [&>p]:text-primary-700 dark:[&>p]:text-neutral-50;
 	}
 	.testimonial__figcaption {
 		@apply flex flex-col items-center gap-4 p-6 pt-2 text-sm leading-normal text-neutral-700 dark:text-neutral-50;

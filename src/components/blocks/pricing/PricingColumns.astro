@@ -17,6 +17,8 @@ import pricingTablesData from '../../../data/json-files/pricingTablesdata.json'
 
 // Script
 import PricingChange from '../../scripts/PricingPlanChange.astro'
+import { getLangFromParams,localizePath } from '../../../i18n/utils'
+
 
 // Props
 type PricingTableData = {
@@ -36,7 +38,8 @@ type PricingTableData = {
 	type: 'basic' | 'featured'
 }
 
-const pricingData: PricingTableData[] = pricingTablesData as PricingTableData[]
+const lang = getLangFromParams(Astro.params)
+const pricingData: PricingTableData[] = pricingTablesData[lang] as PricingTableData[]
 ---
 
 <Section>

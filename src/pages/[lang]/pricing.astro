@@ -5,23 +5,12 @@ import Layout from '../../layouts/Layout.astro'
 // - UI
 import Hero from '../../components/blocks/hero/PageHeader.astro'
 import Price from '../../components/blocks/pricing/PricingColumns.astro'
-import SocialProof from '../../components/blocks/socialproof/Basic.astro'
-import FAQ from '../../components/blocks/FAQ/Basic.astro'
-import Testimonial from '../../components/blocks/testimonials/BasicDark.astro'
-import Feature from '../../components/blocks/features/FeatureList.astro'
-import CTA from '../../components/blocks/CTA/BasicDark.astro'
 
-// Content
 // - SEO
 const SEO = {
 	title: 'Sonomyo | check out our pricing',
 	description:
 		'The pricing of services provided by the Sonomyo myfunctional therapy practice.'
-}
-// - Page Header
-const header = {
-	title: 'Prices of our services:',
-	text: 'We guarentee the service prices for the duration of your therapy.'
 }
 
 export function getStaticPaths() {
@@ -33,6 +22,10 @@ export function getStaticPaths() {
 
 const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
 
+const header = {
+		title: Astro.params.lang === 'en' ? 'Prices of our services:' : 'Cenník našich služeb:',
+		text:  Astro.params.lang === 'en' ? 'We guarentee the service prices for the duration of your therapy.' : 'Garantujeme výši poplatků v průběhu terapie.'
+	}
 ---
 
 <Layout title={SEO.title} description={SEO.description}>

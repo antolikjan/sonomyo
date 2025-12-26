@@ -36,9 +36,7 @@ const {
 		{title}
 		<Icon name="plus" class="accordion__icon" />
 	</summary>
-	<p class="accordion__text">
-		{text}
-	</p>
+	<p class="accordion__text" set:html={text}/>
 </details>
 
 <style>

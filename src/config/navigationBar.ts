@@ -39,11 +39,19 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'navHome', link: '/' },
+		{
+			name: 'Services',
+			link: '/services',
+			submenu: [
+				{ name: 'navMyofunctionalTherapy', link: '/services/myofunctional-therapy' },
+				{ name: 'navUltrasoundBiofeedback', link: '/services/ultrasound-biofeedback' },
+			],
+		},
 		{ name: 'navPricing', link: '/pricing' },
 	    { name: 'navBlog', link: '/blog' },
 		{ name: 'navFaq', link: '/faq' },
 		{ name: 'navAbout', link: '/about' },
-		{ name: 'navContact', link: '/contact' }
+		{ name: 'navContact', link: '/contact' },
 	],
 	navActions: [{ name: 'Book appointment', link: '/contact', style: 'primary', size: 'lg' }]
 }
