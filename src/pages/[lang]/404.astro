@@ -17,6 +17,14 @@ const SEO = {
 	description:
 		" Looks like we chased our tail and lost the page. Don't worry, let's get you back on the Sonomyo trail!"
 }
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
