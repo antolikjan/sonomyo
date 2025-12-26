@@ -1,0 +1,91 @@
+---
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+
+type Column = {
+  title: string
+  image: { src: string }
+  imageAlt?: string
+  items: string[]
+}
+
+type Props = {
+  id?: string
+  title: string
+  left: Column
+  right: Column
+  classes?: string
+}
+
+const { id, title, left, right, classes } = Astro.props
+const columns = [left, right]
+---
+<Section id={id} classes={`bg-[#d4e6fe] problems ${classes ?? ''}`}>
+  <Row classes="justify-center">
+    <Col span="12" align="center" classes="problems__header">
+      <h2 class="problems__title">{title}</h2>
+    </Col>
+  </Row>
+
+  <Row classes="items-start">
+    {columns.map((col) => (
+      <Col span="6" classes="problems__col">
+        <h3 class="problems__col-title">{col.title}</h3>
+
+        <div class="problems__image-wrap">
+          <img
+            src={col.image.src}
+            alt={col.imageAlt ?? col.title}
+            class="problems__image"
+            loading="lazy"
+          />
+        </div>
+        
+        <ul class="problems__list">
+          {col.items.map((item) => (
+            <li class="problems__list-item">{item}</li>
+          ))}
+        </ul>
+      </Col>
+    ))}
+  </Row>
+</Section>
+
+<style>
+  .problems__header {
+    @apply mb-16 max-w-3xl mx-auto;
+  }
+  .problems__title {
+    @apply text-4xl lg:text-5xl font-bold tracking-tight text-primary-600 dark:text-primary-400;
+  }
+
+  .problems__col {
+    @apply flex flex-col items-center text-center;
+  }
+
+  /* Centered column title aligned to image width */
+  .problems__col-title {
+  @apply mt-20 w-full max-w-md mx-auto text-center text-3xl font-semibold tracking-tight
+    text-neutral-900 dark:text-neutral-50;
+}
+  /* Smaller, square image; NO borders */
+  .problems__image-wrap {
+    @apply mt-6 w-full max-w-sm mx-auto overflow-hidden rounded-[3rem];
+    aspect-ratio: 1 / 1;
+  }
+  .problems__image {
+    @apply h-full w-full object-cover;
+  }
+
+.problems__list {
+  @apply mt-8 w-full max-w-sm mx-auto list-disc list-outside text-left text-lg leading-relaxed font-normal
+    text-neutral-800 marker:text-primary-600 dark:text-neutral-300;
+  padding-left: 2.25rem;
+  transform: translateX(0.5rem);
+}
+
+.problems__list li {
+  @apply font-normal;
+}
+</style>

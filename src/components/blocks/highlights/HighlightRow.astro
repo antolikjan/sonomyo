@@ -1,0 +1,43 @@
+---
+// Highlights Section
+// ------------
+// Description: A section with a multiple text and image rows.
+
+// Components
+// - UI
+import TextImage from '../basic/TextImage.astro'
+
+// Content
+
+type HighPropslightBlock = {
+	title: string
+	text: string
+	image: any
+	mobileImage?: any
+	imageWidth: number
+	imageHeight: number
+	imagePosition: 'left' | 'right'
+	bgColor: string,
+}
+
+const	{
+		title,
+		text,
+		image,
+		mobileImage,
+		imagePosition =  'right',
+		bgColor,
+	} = Astro.props
+---
+<TextImage
+	id={`highlight-${title}`}
+	title={title}
+	text={text}
+	image={image}
+	imageWidth={image.width}
+	imageHeight={image.height}
+	mobileImage={mobileImage}
+	imagePosition={imagePosition}
+	bgColor={bgColor}
+	classes={'!pb-0'}
+/>
