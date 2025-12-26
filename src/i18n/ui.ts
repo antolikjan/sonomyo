@@ -29,7 +29,7 @@ export const ui = {
                       "špatné držení těla",
                       "zlepšení orálního mikrobiomu",
                       "nižší kazivost chrupu"
-                    ] as String[], 
+                    ] as string[], 
       'help_adults' : [
                        "nevhodné ústní dýchání",
                        "prevence relapsu v ortodontické péči",
@@ -39,7 +39,7 @@ export const ui = {
                        "zlepšení orálního mikrobiomu",
                        "snížení kazivosti chrupu",
                        "zlepšení výslovnosti v cizích jazycích"
-                      ] as String[],
+                      ] as string[],
       'promise_title' : 'Náš příslib Vám',
       'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
     },
