@@ -45,7 +45,7 @@ type Props = {
 	classes?: string
 }
 const { data, id, listType, classes } = Astro.props
-const { type, header, body, footer } = data
+const { type, header, body } = data
 ---
 
 <div
@@ -95,22 +95,6 @@ const { type, header, body, footer } = data
 					</Body>
 					<div class="flex-1"></div>
 				</div>
-			)
-		}
-		{
-			footer && (
-				<Footer type={type}>
-					<Button
-						size="lg"
-						style="primary"
-						type="link"
-						link={footer.buttonLink}
-						variation="link"
-						classes={'!font-medium ' + (type === 'featured' ? '!text-white' : '')}
-					>
-						{footer.buttonName}
-					</Button>
-				</Footer>
 			)
 		}
 	</div>
