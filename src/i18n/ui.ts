@@ -29,7 +29,7 @@ export const ui = {
                       "špatné držení těla",
                       "zlepšení orálního mikrobiomu",
                       "nižší kazivost chrupu"
-                    ], 
+                    ] as String[], 
       'help_adults' : [
                        "nevhodné ústní dýchání",
                        "prevence relapsu v ortodontické péči",
@@ -39,7 +39,7 @@ export const ui = {
                        "zlepšení orálního mikrobiomu",
                        "snížení kazivosti chrupu",
                        "zlepšení výslovnosti v cizích jazycích"
-                      ],
+                      ] as String[],
       'promise_title' : 'Náš příslib Vám',
       'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
     },
@@ -102,7 +102,7 @@ export const ui = {
                       "poor posture",
                       "improvement of oral microbiome",
                       "lower dental caries"
-                    ],
+                    ] as String[],
       'help_adults' : [
                         "mouth breathing",
                         "prevention of relapse in orthodontic care",
@@ -112,7 +112,7 @@ export const ui = {
                         "improvement of oral microbiome",
                         "reduction of dental caries",
                         "improvement of pronunciation in foreign languages"
-                      ],
+                      ] as String[],
       'promise_title' : 'Our pormise',
       'promise_text' : '• A supportive, judgment-free environment<br>• Clear goals and measurable progress<br>• Practical home practice with coaching and accountability'
 
