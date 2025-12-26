@@ -40,14 +40,6 @@ const header = {
 	title: `Foxi posts about <br><strong>` + tag + `</strong>`,
 	text: `Stay informed, stay productive with all the latest fromFoxi.`
 }
-
-export function getStaticPaths() {
-  return [
-    { params: { lang: 'cs' } },
-    { params: { lang: 'en' } },
-  ];
-}
-
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
