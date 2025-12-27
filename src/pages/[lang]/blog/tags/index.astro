@@ -13,6 +13,12 @@ import BlogPosts from '../../../../components/blocks/blog/BlogPosts.astro'
 // Data
 import { getCollection } from 'astro:content'
 const allPosts = await getCollection('blog')
+
+export async function getStaticPaths() {
+  return ['cs', 'en'].map((lang) => ({
+    params: { lang }
+  }));
+}
 ---
 
 <Layout>

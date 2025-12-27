@@ -76,6 +76,10 @@ export const ui = {
         'Book appointment' : 'Objednat termín',
         '/services' : 'Služby',
     } as Record<string, string>,
+    myofunctional_therapy : {
+        'title' : 'Orální myofunkční terapie pro děti a dospělý',
+        'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové náviky ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám (nebo vašemu dítěti) vybudovat si zdravé vzorce, které vydrží – krok za krokem.',
+      },
   },
   en: {
     index : {
@@ -150,6 +154,12 @@ export const ui = {
         '/services' : 'Services',
         'Book appointment': 'Book appointment',
     } as Record<string, string>,
+    myofunctional_therapy : {
+        'title' : 'Oral Myofunctional Therapy for children and adults',
+        'text' : 'Oral Myofunctional Therapy (OMT) is a gentle, practical approach that helps retrain the muscles of the face, lips, tongue, and jaw so they work the way they’re meant to—supporting comfortable breathing, effective swallowing, clearer speech patterns, and more restful sleep. <br> Many people are surprised to learn how much everyday habits and muscle patterns can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy patterns that last—one step at a time, with plenty of encouragement along the way.'
+    },
+
+    
   },
 } as const;
 
