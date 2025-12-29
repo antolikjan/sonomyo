@@ -43,8 +43,8 @@ export const navigationBarData: NavData = {
 			name: 'Services',
 			link: '/services',
 			submenu: [
-				{ name: 'navMyofunctionalTherapy', link: '/services/myofunctional-therapy' },
-				{ name: 'navUltrasoundBiofeedback', link: '/services/ultrasound-biofeedback' },
+				{ name: 'navMyofunctionalTherapy', link: '/myofunctional-therapy' },
+				{ name: 'navUltrasoundBiofeedback', link: '/ultrasound-biofeedback' },
 			],
 		},
 		{ name: 'navPricing', link: '/pricing' },

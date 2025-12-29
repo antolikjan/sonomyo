@@ -1,0 +1,32 @@
+---
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import { ui } from '../../i18n/ui'
+
+
+// - SEO
+const SEO = {
+	title: 'Sonomyo | Ulrasound guided myofunctional therapy practice.',
+	description:
+		'Sonomyo is a ulrasound guided myofunctional therapy practice.'
+}
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const t = ui[lang].myofunctional_therapy
+
+---
+
+<Layout title={SEO.title} description={SEO.description}>
+		<Hero title={t["title"]} text={t["text"]} />
+
+</Layout>
