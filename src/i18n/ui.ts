@@ -14,7 +14,7 @@ export const ui = {
       'remote_consultation_text' : 'Nejste si jisti, zda-li je terapie pro vás? Poradíme vám bez nutnosti osobní návštěvy.',
       'inperson_consultation_title' : 'Osobně',
       'inperson_consultation_text' : 'Přijďte za námi do ordinace.',
-      'difference_title' : 'Čím se odlišujeme?',
+      'difference_title' : 'Čím se <strong>odlišujeme</strong>?',
       'difference_text' : '<strong>SonoMyo</strong> je první a jediná praxe v Čechách, která využívá <strong>ultrazvukový biofeedback</strong> k vedení terapie, jejímu urychlení a zvýšení její účinnosti. </br></br> Ultrazvuk vám umožňuje <strong>vidět pohyb jazyka v reálném čase</strong>, takže nemusíte hádat, zda cvik provádíte správně. Tato vizuální zpětná vazba pomáhá se naučit správné motorické návyky rychleji a přesněji – podporuje <strong>lepší držení jazyka, dýchací návyky, polykání a srozumitelnou řeč</strong>. <br><br> Ultrazvuk je jemný, bezpečný a neinvazivní: malá sonda spočívá pod bradou, zatímco vás krok za krokem vedeme. <br><br> Mám 20 let zkušeností s výzkumem ultrazvukem řízené biofeedbacku v logopedii a artikulačním tréninku a jeho účinnost jsem prokázala v řadě studií. Se SonoMyo přináším tento špičkový terapeutický přístup svím klientům v podobě myofunkční terapie. </br></br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Logoped a certifikovaná myofunkční terapeutka.</em>',
       'help_title' : 'Jaké problémy řešíme?' ,
       'help_kids_title' : 'Děti',
@@ -40,7 +40,7 @@ export const ui = {
                        "snížení kazivosti chrupu",
                        "zlepšení výslovnosti v cizích jazycích"
                       ] as string[],
-      'promise_title' : 'Náš příslib Vám',
+      'promise_title' : 'Náš <strong>příslib</strong> Vám',
       'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
     },
     about : {
@@ -79,7 +79,9 @@ export const ui = {
     myofunctional_therapy : {
         'title' : 'Orální myofunkční terapie pro děti a dospělý',
         'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. <br><br> Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové náviky ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám (nebo vašemu dítěti) vybudovat si zdravé vzorce, které vydrží – krok za krokem.',
-      },
+        'workwith_title' : 'S kým pracujeme',
+        'workwith_text' :  'Vyšetřujeme děti i dospělé, kteří se mohou potýkat s:<br><br>• Dýcháním ústy nebo postojem s otevřenými ústy<br>• Pozicí s nízkým jazykem v klidu<br>• Vystrčeným jazykem<br>• Chrápáním nebo neklidným spánkem (v rámci týmové péče)<br>• Ortodontickými obavami z recidivy nebo s oporou během nošení rovnátek/rovnátek<br>• Napětím v čelisti/obličeji souvisejícím s funkcí<br>'
+      } as Record<string, string>,
   },
   en: {
     index : {
@@ -91,7 +93,7 @@ export const ui = {
       'remote_consultation_text' : 'You aren\'t sure if the therapy is for you? Or you would like an advise? We can consult without the need of in person visit.',
       'inperson_consultation_title' : 'In person',
       'inperson_consultation_text' : 'Come to our practice.',
-      'difference_title' : 'How are we different?',
+      'difference_title' : 'How are we <strong>different</strong>?',
       'difference_text' : '<strong>SonoMyo</strong> is the first and only practice in the Czech Republic utilising <strong>ultrasound biofeedback</strong> to guide therapy, speeding it up and increasing its effectiveness. <br><br> Ultrasound lets you <strong>see your tongue move in real time</strong>, so you don’t have to guess whether you’re doing an exercise correctly. This visual feedback helps patterns “click” faster—supporting <strong>better tongue posture, breathing habits, swallowing, and clear speech </strong>. <br><br> Ultrasound is gentle, safe, and non-invasive: a small probe rests under the chin while we coach you step-by-step. <br><br> I have 20 year experience in researching ultrasound guided bio-feedback in speech therapy and articulation training, having shown its efficacy in multiple studies. With SonoMio I am bringing this cutting edge therapy approach to you. <br><br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Speech scientists and certified myofunctional therapist.</em>',
       'help_title' : 'Which problems do we address?' ,
       'help_kids_title' : 'Children',
@@ -117,7 +119,7 @@ export const ui = {
                         "reduction of dental caries",
                         "improvement of pronunciation in foreign languages"
                       ] as string[],
-      'promise_title' : 'Our pormise',
+      'promise_title' : 'Our <strong>pormise</strong>',
       'promise_text' : '• A supportive, judgment-free environment<br>• Clear goals and measurable progress<br>• Practical home practice with coaching and accountability'
 
     },
@@ -156,10 +158,20 @@ export const ui = {
     } as Record<string, string>,
     myofunctional_therapy : {
         'title' : 'Oral Myofunctional Therapy for children and adults',
-        'text' : 'Oral Myofunctional Therapy (OMT) is a gentle, practical approach that helps retrain the muscles of the face, lips, tongue, and jaw so they work the way they’re meant to—supporting comfortable breathing, effective swallowing, clearer speech patterns, and more restful sleep. <br><br> Many people are surprised to learn how much everyday habits and muscle patterns can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy patterns that last—one step at a time, with plenty of encouragement along the way.'
-    },
-
-    
+        'text' : 'Oral Myofunctional Therapy (OMT) is a gentle, practical approach that helps retrain the muscles of the face, lips, tongue, and jaw so they work the way they’re meant to—supporting comfortable breathing, effective swallowing, clearer speech patterns, and more restful sleep. <br><br> Many people are surprised to learn how much everyday habits and muscle patterns can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy patterns that last—one step at a time, with plenty of encouragement along the way.',
+         'workwith_title' : 'Who we work with',
+         'workwith_text' :  'We see kids and adults who may be dealing with:<br><br>• Mouth breathing or open-mouth posture<br>• Low tongue resting posture<br>• Tongue thrust<br>• Snoring or restless sleep concerns (as part of a collaborative care team)<br>• Orthodontic relapse concerns or support during braces/aligners<br>• Tension in the jaw/face related to function<br>',
+         'offer_title' :  'What we offer',
+         'offer_text' : '',
+         'offer_1_title' : 'Comprehensive Myofunctional Evaluation',
+         'offer_1_text' : 'Your first visit is a thorough, welcoming assessment. We look at breathing patterns, oral rest posture, tongue mobility, swallow function, facial muscle balance, and habits—along with health history and goals. You’ll leave with a clear understanding of what we’re seeing and a personalized plan tailored to you or your child.<br><br>If we notice signs that point to another area of support, we may recommend coordinated care with an orthodontist, dentist, ENT, sleep physician, SLP, PT/OT, or other providers.',      
+         'offer_2_title' : 'Personalized Oral Myofunctional Therapy Program',
+         'offer_2_text' : 'Therapy is one-on-one and customized. Sessions include:<br><br>• Targeted exercises to build strength, coordination, and endurance• Step-by-step coaching for nasal breathing and healthy oral rest posture• Practical strategies that fit real life (school, work, sports, busy schedules)• Home practice that’s simple, doable, and clearly explained<br><br>Therapy follows the MFTsTArs program and is supported by visual feedback via ultrasound tongue imaging.<br><br>We focus on progress you can feel and see—improving habits and function in daily life, not just in the therapy room.',
+         'offer_3_title' : 'Orthodontic Support (Before, During, or After Treatment)',
+         'offer_3_text' : 'Healthy muscle function plays a big role in long-term orthodontic stability. Oral myofunctional therapy can support orthodontic therapy with braces or aligners by helping create balanced tongue and lip posture and an efficient swallow—so orthodontic results are more likely to hold.',      
+         'offer_4_title' : 'Airway & Sleep Support (Collaborative Care)',
+         'offer_4_text' : 'We don’t diagnose sleep disorders, but we often work with families and adults who have concerns like mouth breathing, snoring, or restless sleep. When appropriate, we coordinate with your medical team so your therapy plan supports airway-friendly habits and function.',            
+        } as Record<string, string>,
   },
 } as const;
 

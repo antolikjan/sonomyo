@@ -6,6 +6,12 @@ import Layout from '../../layouts/Layout.astro'
 import Hero from '../../components/blocks/hero/PageHeader.astro'
 import { ui } from '../../i18n/ui'
 
+import muscle_head from '../../assets/images/muscle_head.png'
+import puckered_lips from '../../assets/images/puckered_lips.png'
+
+import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
+import Features from '../../components/blocks/features/FeatureCards.astro'
+
 
 // - SEO
 const SEO = {
@@ -27,6 +33,7 @@ const t = ui[lang].myofunctional_therapy
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-		<Hero title={t["title"]} text={t["text"]} />
-
+		<Hero title={t["title"]} text={t["text"]} image={muscle_head} bgColor='#d4e6fe'/>
+    <HighlightBlock image={puckered_lips} title={t["workwith_title"]} text={t["workwith_text"]}  />
+    <Features />
 </Layout>
