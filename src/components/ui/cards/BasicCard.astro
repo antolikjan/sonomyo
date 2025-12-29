@@ -60,9 +60,7 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 			)
 		}
 		{subtitle && (
-		<p class="text-sm text-neutral-600 whitespace-pre-line">
-			{subtitle}
-		</p>
+		<p class="text-sm text-neutral-600 whitespace-pre-line" set:html={subtitle}/>
 		)}
 		<slot />
 	</CardBody>
