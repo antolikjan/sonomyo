@@ -15,7 +15,7 @@ export const ui = {
       'inperson_consultation_title' : 'Osobně',
       'inperson_consultation_text' : 'Přijďte za námi do ordinace.',
       'difference_title' : 'Čím se odlišujeme?',
-      'difference_text' : '<strong>SonoMyo</strong> je první a jediná praxe v Čechách, která využívá <strong>ultrazvukový biofeedback</strong> k vedení terapie, jejímu urychlení a zvýšení její účinnosti. </br></br> Ultrazvuk vám umožňuje <strong>vidět pohyb jazyka v reálném čase</strong>, takže nemusíte hádat, zda cvik provádíte správně. Tato vizuální zpětná vazba pomáhá se naučit správné motorické návyky rychleji a přesněji – podporuje <strong>lepší držení jazyka, dýchací návyky, polykání a srozumitelnou řeč</strong>. <br><br> Ultrazvuk je jemný, bezpečný a neinvazivní: malá sonda spočívá pod bradou, zatímco vás krok za krokem vedeme. <br><br> Mám 20 let zkušeností s výzkumem ultrazvukem řízené biofeedbacku v logopedii a artikulačním tréninku a jeho účinnost jsem prokázala v řadě studií. Se SonoMio přináším tento špičkový terapeutický přístup svím klientům. </br></br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Logoped a certifikovaná myofunkční terapeutka.</em>',
+      'difference_text' : '<strong>SonoMyo</strong> je první a jediná praxe v Čechách, která využívá <strong>ultrazvukový biofeedback</strong> k vedení terapie, jejímu urychlení a zvýšení její účinnosti. </br></br> Ultrazvuk vám umožňuje <strong>vidět pohyb jazyka v reálném čase</strong>, takže nemusíte hádat, zda cvik provádíte správně. Tato vizuální zpětná vazba pomáhá se naučit správné motorické návyky rychleji a přesněji – podporuje <strong>lepší držení jazyka, dýchací návyky, polykání a srozumitelnou řeč</strong>. <br><br> Ultrazvuk je jemný, bezpečný a neinvazivní: malá sonda spočívá pod bradou, zatímco vás krok za krokem vedeme. <br><br> Mám 20 let zkušeností s výzkumem ultrazvukem řízené biofeedbacku v logopedii a artikulačním tréninku a jeho účinnost jsem prokázala v řadě studií. Se SonoMyo přináším tento špičkový terapeutický přístup svím klientům v podobě myofunkční terapie. </br></br> <strong>MSc. Tanja Kocjancic Antolík, PhD</strong> <br> <em>Logoped a certifikovaná myofunkční terapeutka.</em>',
       'help_title' : 'Jaké problémy řešíme?' ,
       'help_kids_title' : 'Děti',
       'help_adults_title' : 'Dospělí',
@@ -78,7 +78,7 @@ export const ui = {
     } as Record<string, string>,
     myofunctional_therapy : {
         'title' : 'Orální myofunkční terapie pro děti a dospělý',
-        'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové náviky ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám (nebo vašemu dítěti) vybudovat si zdravé vzorce, které vydrží – krok za krokem.',
+        'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. <br><br> Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové náviky ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám (nebo vašemu dítěti) vybudovat si zdravé vzorce, které vydrží – krok za krokem.',
       },
   },
   en: {
@@ -156,7 +156,7 @@ export const ui = {
     } as Record<string, string>,
     myofunctional_therapy : {
         'title' : 'Oral Myofunctional Therapy for children and adults',
-        'text' : 'Oral Myofunctional Therapy (OMT) is a gentle, practical approach that helps retrain the muscles of the face, lips, tongue, and jaw so they work the way they’re meant to—supporting comfortable breathing, effective swallowing, clearer speech patterns, and more restful sleep. <br> Many people are surprised to learn how much everyday habits and muscle patterns can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy patterns that last—one step at a time, with plenty of encouragement along the way.'
+        'text' : 'Oral Myofunctional Therapy (OMT) is a gentle, practical approach that helps retrain the muscles of the face, lips, tongue, and jaw so they work the way they’re meant to—supporting comfortable breathing, effective swallowing, clearer speech patterns, and more restful sleep. <br><br> Many people are surprised to learn how much everyday habits and muscle patterns can affect the way we breathe, eat, grow, and feel. Our goal is simple: help you (or your child) build healthy patterns that last—one step at a time, with plenty of encouragement along the way.'
     },
 
     

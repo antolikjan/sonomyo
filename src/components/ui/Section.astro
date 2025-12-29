@@ -30,6 +30,7 @@ type Props = {
 	bgPosition?: string
 	bgHeight?: string
 	classes?: string
+	style?: string
 }
 const {
 	id,
@@ -40,7 +41,8 @@ const {
 	bg,
 	bgPosition = 'center',
 	bgHeight = '100%',
-	classes
+	classes,
+	style
 } = Astro.props
 
 const bgStyle = bg
@@ -56,6 +58,7 @@ const bgStyle = bg
 
 <section
 	{...id ? { id } : {}}
+	{...style ? { style } : {}}
 	class:list={[
 		'section',
 		{ 'section--sticky-col': stickyCol },

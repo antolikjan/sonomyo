@@ -9,13 +9,24 @@ import Layout from '../../../layouts/PostLayout.astro'
 
 // Data
 import { getCollection, render  } from 'astro:content'
+
 export async function getStaticPaths() {
-	const blogEntries = await getCollection('blog')
-	return blogEntries.map((entry) => ({
-		params:{ id: decodeURI( entry.id )},
-		props: { entry }
-	}))
+  const allPosts = await getCollection('blog')
+  const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags ?? []))]
+
+  const langs = ['cs', 'en'] as const
+
+  return langs.flatMap((lang) =>
+    uniqueTags.map((tag) => {
+      const filteredPosts = allPosts.filter((post) => (post.data.tags ?? []).includes(tag))
+      return {
+        params: { lang, tag },
+        props: { posts: filteredPosts, tag },
+      }
+    })
+  )
 }
+
 const { entry } = Astro.props
 const { Content } = await render(entry);
 ---

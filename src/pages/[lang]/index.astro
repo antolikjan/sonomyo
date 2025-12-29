@@ -3,12 +3,11 @@
 // - Layout
 import Layout from '../../layouts/Layout.astro'
 // - UI
-import Hero from '../../components/blocks/hero/HomeCTA.astro'
-import Features from '../../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../../components/blocks/testimonials/BasicDark.astro'
 import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
 import HighlightPair from '../../components/blocks/highlights/HighlightPair.astro'
-import CTA from '../../components/blocks/CTA/BasicDark.astro'
+import Spacer from '../../components/ui/Spacer.astro'
+
 import { ui } from '../../i18n/ui'
 
 // Content
@@ -42,6 +41,7 @@ const t = ui[lang].index
 <Layout title={SEO.title} description={SEO.description}>
 	<Testimonial bg={testimonialBackground} bgPosition="right" />
 	<HighlightBlock image={smiling_girl} title={t["about_title"]} text={t["about_text"]} />
+	<Spacer size="12" desktopSize="24"/>
 
 	<HighlightPair id="problems" title={t["help_title"]}
 	left={{
@@ -57,7 +57,8 @@ const t = ui[lang].index
 	/>		
 	
 	<HighlightBlock image={portable_ultrasound} title={t["difference_title"]} text={t["difference_text"]} imagePosition='left' />
+	<Spacer size="12" desktopSize="24"/>
 
 	<HighlightBlock image={handshake} title={t["promise_title"]} text={t["promise_text"]} bgColor='#d4e6fe' />
-
+    <Spacer size="12" desktopSize="24" bg="bg-[#d4e6fe]" />
 </Layout>
