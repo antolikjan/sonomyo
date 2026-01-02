@@ -9,9 +9,14 @@ import { ui } from '../../i18n/ui'
 import muscle_head from '../../assets/images/muscle_head.png'
 import puckered_lips from '../../assets/images/puckered_lips.png'
 import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
-import Features from '../../components/blocks/features/FeatureCards.astro'
 import CTA from '../../components/blocks/testimonials/CTA.astro'
+import ServicesGrid from '../../components/blocks/features/ServiceGrid.astro'
 
+
+import boy_wit_tongue_touching_lips from '../../assets/images/boy_wit_tongue_touching_lips.png'
+import braces from '../../assets/images/braces.png'
+import sleeping_child from '../../assets/images/sleeping_child.png'
+import lip_retractor from '../../assets/images/lip_retractor.png'
 
 
 // - SEO
@@ -36,6 +41,36 @@ const t = ui[lang].myofunctional_therapy
 <Layout title={SEO.title} description={SEO.description}>
 		<Hero title={t["title"]} text={t["text"]} image={muscle_head} bgColor='#d4e6fe'/>
     <HighlightBlock image={puckered_lips} title={t["workwith_title"]} text={t["workwith_text"]}  />
-    <Features />
+
+    <ServicesGrid
+      title={t["offer_title"]}
+      intro={t["offer_text"]}
+      bgColor="#d4e6fe"
+      services={[
+        {
+          title: t["offer_1_title"],
+          description: t["offer_1_text"],
+          image: lip_retractor,
+        },
+        {
+          title: t["offer_2_title"],
+          description: t["offer_2_text"],
+          image: boy_wit_tongue_touching_lips,
+        },
+        {
+          title: t["offer_3_title"],
+          description: t["offer_3_text"],
+          image: braces,
+        },
+        {
+          title: t["offer_4_title"],
+          description: t["offer_4_text"],
+          image: sleeping_child,
+        },
+      
+      ]}
+/>
+
+    
     <CTA/>
 </Layout>
