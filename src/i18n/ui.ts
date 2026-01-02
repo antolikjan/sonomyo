@@ -92,6 +92,11 @@ export const ui = {
         'offer_4_title' : 'Podpora dýchacích cest a spánku (kolaborativní péče)',
         'offer_4_text' : 'Nediagnostikujeme poruchy spánku, ale často pracujeme s rodinami a dospělými, kteří mají problémy, jako je dýchání ústy, chrápání nebo neklidný spánek. V případě potřeby koordinujeme s vaším lékařským týmem, aby váš terapeutický plán podporoval návyky a funkci dýchacích cest.',            
       } as Record<string, string>,
+      cta : {
+        'title' : 'Jste připravení začít?',
+        'text' : 'Pokud vás zajímá, zda by vám nebo vašemu dítěti mohla pomoci orální myofunkční terapie nebo nácvik výslovnosti s ultrazvukovou podporou, rádi se s vámi setkáme. Začněte komplexním vyšetřením a společně podnikneme další kroky.',
+        'book' : 'Book appointment',
+      },
   },
   en: {
     index : {
@@ -182,6 +187,13 @@ export const ui = {
          'offer_4_title' : 'Airway & Sleep Support (Collaborative Care)',
          'offer_4_text' : 'We don’t diagnose sleep disorders, but we often work with families and adults who have concerns like mouth breathing, snoring, or restless sleep. When appropriate, we coordinate with your medical team so your therapy plan supports airway-friendly habits and function.',            
         } as Record<string, string>,
+      cta : {
+        'title' : 'Ready to begin?',
+        'text' : 'If you’re curious whether Oral Myofunctional Therapy or ultrasound-supported pronunciation practice could help you or your child, we’d love to meet you. Start with a comprehensive evaluation and we’ll take the next steps together.',
+        'book' : 'Book appointment',
+
+      }
+
   },
 } as const;
 

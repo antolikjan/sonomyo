@@ -10,6 +10,8 @@ import muscle_head from '../../assets/images/muscle_head.png'
 import puckered_lips from '../../assets/images/puckered_lips.png'
 import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
 import Features from '../../components/blocks/features/FeatureCards.astro'
+import CTA from '../../components/blocks/testimonials/CTA.astro'
+
 
 
 // - SEO
@@ -35,4 +37,5 @@ const t = ui[lang].myofunctional_therapy
 		<Hero title={t["title"]} text={t["text"]} image={muscle_head} bgColor='#d4e6fe'/>
     <HighlightBlock image={puckered_lips} title={t["workwith_title"]} text={t["workwith_text"]}  />
     <Features />
+    <CTA/>
 </Layout>

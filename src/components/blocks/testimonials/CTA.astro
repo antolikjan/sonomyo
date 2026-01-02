@@ -1,0 +1,66 @@
+---
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+import Testimonial from '../../ui/Testimonial.astro'
+import { Icon } from 'astro-icon/components'
+import Button from '../../ui/Button.astro'
+
+import { ui } from '../../../i18n/ui'
+import { getLangFromParams,localizePath } from '../../../i18n/utils'
+
+const lang = getLangFromParams(Astro.params)
+const t = ui[lang].cta
+const contact_path = localizePath('/contact',lang)
+
+type Props = {
+  blockquote?: string
+  figcaption?: string
+  cite?: string
+  bg?: any
+  bgPosition?: 'left' | 'right' | 'center'
+}
+
+const {
+  blockquote = t['text'],
+  figcaption = '',
+  cite = '',
+  bg,
+  bgPosition = 'center'
+} = Astro.props
+---
+<Section
+  id="testimonial"
+  mode="light"
+  bg={bg}
+  bgPosition={bgPosition}
+  classes="border-y border-neutral-200 dark:border-neutral-800 text-neutral-900 dark:text-neutral-50"
+>
+
+  <Row>
+    <Col span="12">
+      <!-- Title / Testimonial -->
+      <div class="relative z-10">
+        <Testimonial
+          blockquote={blockquote}
+          align="center"
+          size="4xl"
+          mobileSize="2xl"
+          classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto !text-neutral-900 !opacity-100 dark:!text-neutral-50"
+        />
+      </div>
+
+	  </br></br></br></br>
+
+      <!-- Rezervace button: closer to panels than title -->
+      <div class="mt-4 flex justify-center">
+					
+			<a href={contact_path} class="flex-auto inline-flex items-center justify-center text-white">
+					<Button size='lg' style='primary'>
+					{t['book']}		
+					</Button>
+			</a>	
+      </div>
+    </Col>
+  </Row>
+</Section>
