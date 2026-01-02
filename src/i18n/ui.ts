@@ -44,7 +44,7 @@ export const ui = {
       'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
     },
     about : {
-        'description' : 'Vědec zabívající se řečí a myofunkční terapeut působící v Praze a Lublani.'
+        'description' : 'Myofunkční terapeut a vědec zabívající se řečí působící v Praze a Lublani.'
     },
     contact : {
         'firstN' : 'Jméno',
@@ -71,7 +71,7 @@ export const ui = {
         '/faq': 'FAQ',
         '/contact': 'Kontakt',
         '/about': 'O mně',
-        '/myofunctional-therapy' : 'Myfunkční terapie',
+        '/myofunctional-therapy' : 'Myofunkční terapie',
         '/ultrasound-biofeedback' : "Ultrazvukový feedback",
         'Book appointment' : 'Objednat termín',
         '/services' : 'Služby',
@@ -143,7 +143,7 @@ export const ui = {
 
     },
     about : {
-        'description' :'Speech scientists and myfunctional therapist based in Prague and Ljubljana.'
+        'description' :'Myofunctional therapist and speech scientists based in Prague and Ljubljana.'
     },
     contact : {
         'firstN' : 'First Name',

@@ -33,50 +33,41 @@ type Props = {
 }
 const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes } = Astro.props
 ---
-
 <Card classes={classes} link={link}>
-	{image && (
-	<div class:list={['card__image-slot', { 'order-2': type === 'image-bottom' }]}>
-		<Image
-		src={image}
-		alt={title}
-		class="card__image"
-		width={600}
-		height={400}
-		/>
-	</div>
-	)}
 
-	{
-		icon && (
-			<div class="px-6 pt-6">
-				<Icon name={`${icon}`} class="card__icon" />
-			</div>
-		)
-	}
-	<CardBody>
-		{
-			title && (
-				<h3 class:list={[['text-' + `${titleSize} ` + `lg:text` + `${titleSize}`]]}>{title}</h3>
-			)
-		}
-		{subtitle && (
-		<p class="text-sm text-neutral-600 whitespace-pre-line" set:html={subtitle}/>
-		)}
-		<slot />
-	</CardBody>
+  <CardBody>
+    {title && (
+      <h3 class:list={[['text-' + `${titleSize} ` + `lg:text` + `${titleSize}`]]}>
+        {title}
+      </h3>
+    )}
+
+    {subtitle && (
+      <p class="text-sm text-neutral-600 whitespace-pre-line" set:html={subtitle} />
+    )}
+
+    <slot />
+  </CardBody>
+
+  {image && (
+    <div class:list={['card__image-slot', { 'order-2': type === 'image-bottom' }]}>
+      <Image src={image} alt={title} class="card__image" width={600} height={400} />
+    </div>
+  )}
+
 </Card>
+
+
 <style>
 	.card__icon {
 		@apply inline-block size-6 shrink-0 text-primary-500;
 	}
 
 	.card__image-slot {
-	@apply mt-8 flex justify-center;
+	@apply mt-6 px-6 pb-6 flex justify-center;
 	}
 
-	.card__image {
-	/* consistent visible size across cards */
-	@apply h-64 w-64 object-contain;
-	}
+.card__image {
+  @apply h-32 w-auto object-contain;
+}
 </style>
