@@ -1,0 +1,194 @@
+---
+// ServicesGrid.astro
+// A clean, responsive services grid that handles very different description lengths gracefully.
+// - No equal-height hacks
+// - Optional image per service
+// - Optional bullet list per service
+// - Optional CTA link per service
+
+import { Image } from 'astro:assets'
+import { Icon } from 'astro-icon/components'
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+
+type Service = {
+  title: string
+  description?: string // can be long
+  bullets?: string[]   // optional list
+  image?: any          // imported asset
+  imageAlt?: string
+  icon?: string        // astro-icon name, optional
+  href?: string        // optional link
+  ctaLabel?: string    // optional button text
+}
+
+type Props = {
+  id?: string
+  title?: string
+  intro?: string
+  services: Service[]
+  bgColor?: string
+  classes?: string
+}
+
+const {
+  id = 'services',
+  title,
+  intro,
+  services,
+  bgColor = '#d4e6fe',
+  classes
+} = Astro.props
+---
+
+<Section id={id} classes={classes} style={`background-color: ${bgColor};`}>
+  <Row>
+    <Col span="12" align="center" classes="services__header">
+      {title && <h2 class="services__title">{title}</h2>}
+      {intro && <p class="services__intro">{intro}</p>}
+    </Col>
+  </Row>
+
+  <div class="services__grid">
+    {services.map((s) => (
+      <article class="services__card">
+        {/* Top row: icon + title */}
+        <header class="services__card-header">
+          {s.icon && (
+            <span class="services__icon" aria-hidden="true">
+              <Icon name={s.icon} class="services__icon-svg" />
+            </span>
+          )}
+          <h3 class="services__card-title">{s.title}</h3>
+        </header>
+
+        {/* Optional image: consistent slot, centered */}
+        {s.image && (
+          <div class="services__image-slot">
+            <Image
+              src={s.image}
+              alt={s.imageAlt ?? s.title}
+              class="services__image"
+              width={720}
+              height={480}
+              loading="lazy"
+            />
+          </div>
+        )}
+
+        {/* Body */}
+        <div class="services__body">
+          {s.description && <p class="services__desc" set:html={s.description} />}
+
+          {s.bullets?.length ? (
+            <ul class="services__list">
+              {s.bullets.map((b) => (
+                <li class="services__list-item">{b}</li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+
+        {/* Optional CTA */}
+        {s.href && (
+          <footer class="services__footer">
+            <a class="services__cta" href={s.href}>
+              {s.ctaLabel ?? 'Learn more'}
+              <span aria-hidden="true">→</span>
+            </a>
+          </footer>
+        )}
+      </article>
+    ))}
+  </div>
+</Section>
+
+<style>
+  .services__header {
+    @apply mb-10 max-w-4xl mx-auto;
+  }
+
+  .services__title {
+    @apply text-4xl lg:text-5xl font-bold tracking-tight text-primary-700;
+  }
+
+  .services__intro {
+    @apply mt-4 text-lg leading-relaxed text-neutral-700;
+  }
+
+  /* Responsive grid: looks great with variable content */
+  .services__grid {
+    @apply mt-10 lg:mt-14 grid gap-6 lg:gap-8;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  
+  @media (min-width: 768px) {
+    .services__grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      align-items: start;
+    }
+  }
+
+  /* Card */
+  .services__card {
+    @apply rounded-xl bg-white/80 backdrop-blur border border-neutral-200 shadow-sm;
+    @apply dark:bg-neutral-900/60 dark:border-neutral-800;
+    @apply p-6 lg:p-7;
+  }
+
+  .services__card-header {
+    @apply flex items-center gap-3;
+  }
+
+  .services__icon {
+    @apply inline-flex h-10 w-10 items-center justify-center rounded-lg;
+    @apply bg-primary-50 text-primary-700;
+    @apply dark:bg-primary-900/30 dark:text-primary-200;
+    flex: 0 0 auto;
+  }
+
+  .services__icon-svg {
+    @apply h-5 w-5;
+  }
+
+  .services__card-title {
+    @apply text-xl lg:text-2xl font-semibold text-neutral-900 dark:text-neutral-50;
+  }
+
+  /* Image slot keeps images consistent, not huge, always centered */
+  .services__image-slot {
+    @apply mt-5 flex justify-center;
+  }
+
+  .services__image {
+    @apply w-full max-w-xs rounded-lg object-cover;
+    @apply border-0; /* ensure no borders show */
+  }
+
+  .services__body {
+    @apply mt-5;
+  }
+
+  .services__desc {
+    @apply text-neutral-700 dark:text-neutral-300 leading-relaxed;
+  }
+
+  .services__list {
+    @apply mt-4 space-y-2 list-disc list-outside text-neutral-700 dark:text-neutral-300;
+    padding-left: 1.25rem;
+  }
+
+  .services__list-item::marker {
+    @apply text-primary-600;
+  }
+
+  .services__footer {
+    @apply mt-6;
+  }
+
+  .services__cta {
+    @apply inline-flex items-center gap-2 font-medium text-primary-700 hover:text-primary-800;
+    @apply dark:text-primary-200 dark:hover:text-primary-100;
+  }
+</style>
