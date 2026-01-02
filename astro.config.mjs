@@ -28,6 +28,4 @@ export default defineConfig({
       prefixDefaultLocale: true, // option A: cs has no prefix, en does
     },
   },
-
-
 });
