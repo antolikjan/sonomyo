@@ -36,16 +36,19 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 
 <Card classes={classes} link={link}>
 	{
-		image && (
-			<Image
-				src={image}
-				alt={title}
-				class={type === 'image-bottom' ? 'order-2' : ''}
-				width={600}
-				height={400}
-			/>
-		)
+	image && (
+		<div class:list={['card__image-slot', { 'order-2': type === 'image-bottom' }]}>
+		<Image
+			src={image}
+			alt={title}
+			class="card__image"
+			width={600}
+			height={400}
+		/>
+		</div>
+	)
 	}
+
 	{
 		icon && (
 			<div class="px-6 pt-6">
@@ -68,5 +71,18 @@ const { title = '', subtitle, titleSize = 'lg', image, icon, link, type, classes
 <style>
 	.card__icon {
 		@apply inline-block size-6 shrink-0 text-primary-500;
+	}
+
+	.card__image-slot {
+	/* fixed visual area for image, centered */
+	@apply flex items-center justify-center px-6 pt-6;
+	@apply h-64;              /* controls how “big” the image area is */
+	}
+
+	.card__image {
+	/* keep image centered + never overflow the slot */
+	@apply max-h-full max-w-full object-contain;
+	@apply mx-auto;
+	@apply w-auto h-full;     /* fill slot height, keep aspect ratio */
 	}
 </style>
