@@ -14,3 +14,10 @@ export const GET: APIRoute = () => {
 		}
 	})
 }
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
