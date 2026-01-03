@@ -47,7 +47,7 @@ const {
     <Col span="12" align="center" classes="services__header">
       {title && <h2 class="services__title">{title}</h2>}
       {intro && <p class="services__intro">{intro}</p>}
-    </Col>
+    </Col>  
   </Row>
 
   <div class="services__grid">
@@ -105,23 +105,27 @@ const {
 </Section>
 
 <style>
-  .services__header {
-    @apply mb-10 max-w-4xl mx-auto;
-  }
+.services__header {
+  @apply mb-0 max-w-4xl mx-auto text-center relative;
+}
 
-  .services__title {
-    @apply text-4xl lg:text-5xl font-bold tracking-tight text-primary-700;
-  }
+.services__divider {
+  @apply mx-auto mt-5 h-[3px] w-14 rounded-full bg-primary-600/60;
+}
 
-  .services__intro {
+.services__title {
+  @apply text-4xl lg:text-5xl font-bold tracking-tight text-primary-700;
+}
+
+.services__intro {
     @apply mt-4 text-lg leading-relaxed text-neutral-700;
-  }
+}
 
   /* Responsive grid: looks great with variable content */
-  .services__grid {
-    @apply mt-10 lg:mt-14 grid gap-6 lg:gap-8;
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-  }
+.services__grid {
+  @apply pt-10 lg:pt-14 grid gap-6 lg:gap-8;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
   
   @media (min-width: 768px) {
     .services__grid {
