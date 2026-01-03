@@ -59,7 +59,12 @@ const {
 		<figure class="testimonial__figure">
 			<blockquote class="testimonial__blockquote">
 				
-				<p>
+				<p
+    class:list={[
+      `text-${mobileSize}`,
+      `lg:text-${size}`,
+    ]}
+  >
 					{blockquote}
 				</p>
 			</blockquote>
