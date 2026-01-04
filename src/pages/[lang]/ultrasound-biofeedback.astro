@@ -4,16 +4,18 @@ import { getCollection, render } from 'astro:content'
 
 const LANG_RE = /\.(cs|en)$/
 
-function getLangFromEntryId(id: string) {
-  const m = id.match(LANG_RE)
-  return m ? (m[1] as 'cs' | 'en') : null
-}
-
-function getBaseSlug(id: string) {
-  return id.replace(LANG_RE, '') // blog1.en -> blog1
-}
-
 export async function getStaticPaths() {
+
+  function getLangFromEntryId(id: string) {
+    const m = id.match(LANG_RE)
+    return m ? (m[1] as 'cs' | 'en') : null
+  }
+
+  function getBaseSlug(id: string) {
+    return id.replace(LANG_RE, '') // blog1.en -> blog1
+  }
+
+
   const entries = await getCollection('blog')
 
   return entries
