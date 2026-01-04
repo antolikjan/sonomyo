@@ -41,7 +41,7 @@ export const ui = {
                        "zlepšení výslovnosti v cizích jazycích"
                       ] as string[],
       'promise_title' : 'Náš <strong>příslib</strong> Vám',
-      'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink, coaching, a kontinuálnu podporu.'
+      'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink a kontinuální podporu.'
     },
     about : {
         'description' : 'Myofunkční terapeut a vědec zabívající se řečí působící v Praze a Lublani.'
@@ -99,7 +99,12 @@ export const ui = {
       },
       ultrasound_imaging :
       {
-        'text' : 'Ultrazvuk je efektivní nástroj pro učení, protože umožňuje vidět pohyb jazyka v reálném čase. Pro klienty, kteří mají potíže s určitými zvuky, může tato vizuální zpětná vazba konečně pomoci docílit správného umístění jazyka tam, kde tradiční metody selhávají. Tato metoda je obzvláště užitečná, když klient potřebuje jasnější a konkrétnější zpětnou vazbu o tvaru a pohybu jazyka. Metodu lze použít k procvičování výslovnosti v rodném i cizím jazyce a je vhodná pro děti od 5 let a dospělé.<br><br>Během ultrazvukového vyšetření se pod bradu umísti malá ultrazvuková sonda která vizualizuje pohyb jazyka na monitoru na který se klient dívá. Tyto informace používáme k nácviku přesnějšího umístění jazyka a k budování konzistentních phybových vzorců v průběhu terapie. (Jedná se o školení a koučování – nikoli o lékařskou diagnózu.)<br><br>Poznámka: Pokud v současné době spolupracujete s logopedem, rádi s vámi budeme spolupracovat, aby vaše cíle zůstaly sladěny.',
+        'title' : 'Ultrazvukový bio-feedback',
+        'text' : 'Ultrazvuk je efektivní nástroj pro učení, protože umožňuje vidět pohyb jazyka v reálném čase. Pro klienty, kteří mají potíže s určitými zvuky, může tato vizuální zpětná vazba konečně pomoci docílit správného umístění jazyka tam, kde tradiční metody selhávají. Tato metoda je obzvláště užitečná, když klient potřebuje jasnější a konkrétnější zpětnou vazbu o tvaru a pohybu jazyka. Metodu lze použít k procvičování výslovnosti v rodném i cizím jazyce a je vhodná pro děti od 5 let a dospělé.',
+        'ultra_title' : 'Jak vypadá <strong>cvičení</strong>?',
+        'ultra' : 'Během ultrazvukového vyšetření se pod bradu umísti malá ultrazvuková sonda která vizualizuje pohyb jazyka na monitoru na který se klient dívá. Tyto informace používáme k nácviku přesnějšího umístění jazyka a k budování konzistentních phybových vzorců v průběhu terapie. (Jedná se o školení a koučování – nikoli o lékařskou diagnózu.)',
+        'collaboration_title' : 'Rádi <strong>spolupracujeme</strong>!',
+        'collaboration' :  'Pokud v současné době spolupracujete s logopedem, rádi s vámi budeme spolupracovat, aby vaše cíle zůstaly sladěny.',
       }
   },
   en: {
@@ -199,9 +204,13 @@ export const ui = {
       },
       ultrasound_imaging :
       {
-        'text' : 'Ultrasound is a effective learning tool—because it lets you see the tongue move in real time. For clients who struggle with certain sounds, this visual feedback can make tongue placement finally “click.” This service is especially helpful when a client needs clearer, more specific feedback about tongue shape and movement. The method can be used for practicing pronunciation in a native or foreign language, and is suitable for children from the age of 5 years and adults.<br><br>During an ultrasound session, a small ultrasound probe is held under the chin to visualize tongue movement. We use this information to coach more accurate tongue placement and help build consistent patterns over time. (This is training and coaching—not a medical diagnosis.)<br><br>Note: If you are currently working with a Speech-Language Pathologist, we’re happy to collaborate so your goals stay aligned.',
+        'title' : 'Ultrasound imaging bio-feedback',
+        'text' : 'Ultrasound is a effective learning tool—because it lets you see the tongue move in real time. For clients who struggle with certain sounds, this visual feedback can make tongue placement finally “click.” This service is especially helpful when a client needs clearer, more specific feedback about tongue shape and movement. The method can be used for practicing pronunciation in a native or foreign language, and is suitable for children from the age of 5 years and adults.',
+        'ultra_title' : 'How does a <strong>traing session</strong> look?',
+        'ultra' : 'During an ultrasound session, a small ultrasound probe is held under the chin to visualize tongue movement. We use this information to coach more accurate tongue placement and help build consistent patterns over time. (This is training and coaching—not a medical diagnosis.)',
+        'collaboration_title' : '<strong>Collaborative</strong> approach',        
+        'collaboration' : 'If you are currently working with a  Orthodontist or Speech-Language Pathologis, we’re happy to collaborate so your treatment goals stay aligned.',
       }
-
   },
 } as const;
 

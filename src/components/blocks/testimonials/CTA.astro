@@ -41,16 +41,23 @@ const {
     <Col span="12">
       <!-- Title / Testimonial -->
       <div class="relative z-10">
+        <!-- Icon above title -->
+        <div class="mb-4 flex justify-center" aria-hidden="true">
+          <Icon
+            name="bell-alert"
+            class="h-20 w-20 text-yellow-400 dark:text-yellow-300"
+          />
+        </div>
+
+
         <Testimonial
           blockquote={blockquote}
           align="center"
-          size="small"
-          mobileSize="small"
+          size="lg"
+          mobileSize="lg"
           classes="!leading-tight font-bold xl:text-5xl max-w-4xl mx-auto !text-neutral-900 !opacity-100 dark:!text-neutral-50"
         />
       </div>
-
-	  </br></br></br></br>
 
       <!-- Rezervace button: closer to panels than title -->
       <div class="mt-4 flex justify-center">
@@ -64,3 +71,10 @@ const {
     </Col>
   </Row>
 </Section>
+
+<style>
+.testimonial__topicon {
+  @apply inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-white/70 text-primary-700 shadow-sm ring-1 ring-neutral-200;
+  @apply dark:bg-neutral-900/60 dark:text-primary-200 dark:ring-neutral-800;
+}
+</style>
