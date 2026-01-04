@@ -3,16 +3,21 @@ import Layout from '../../../layouts/Layout.astro'
 import Hero from '../../../components/blocks/hero/PageHeader.astro'
 import BlogPosts from '../../../components/blocks/blog/BlogPosts.astro'
 import { getCollection } from 'astro:content'
+import { ui } from '../../../i18n/ui'
 
 const SEO = {
-  title: 'Sonomyo | Blog',
+  title: 'SonoMyo | Blog',
   description:
     'Explore news, stories and insights from the world of myofunctional therapy, speech therapy and science.'
 }
 
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
+const t = ui[lang].blog
+
+
 const header = {
-  title: 'The <strong>Sonomyo</strong> Blog. Tips, Updates & Stories',
-  text: 'Stay informed. All the latest from the world of myofunctional therapy and speech science.'
+  title: t['title'],
+  text: t['text']
 }
 
 export function getStaticPaths() {
@@ -22,7 +27,7 @@ export function getStaticPaths() {
   ];
 }
 
-const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
+
 
 // only posts in this language folder:
 const posts = await getCollection('blog', ({ id, data }) =>

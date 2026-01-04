@@ -2,14 +2,16 @@
 import Layout from '../../../layouts/PostLayout.astro'
 import { getCollection, render } from 'astro:content'
 
-function splitEntryId(entryId: string) {
-  const parts = entryId.split('/')
-  const lang = parts[0]                 // "cs" | "en"
-  const slug = parts.slice(2).join('/') // after "cs/blog/"
-  return { lang, slug }
-}
-
 export async function getStaticPaths() {
+
+  function splitEntryId(entryId: string) {
+    const parts = entryId.split('/')
+    const lang = parts[0]                 // "cs" | "en"
+    const slug = parts.slice(2).join('/') // after "cs/blog/"
+    return { lang, slug }
+  }
+
+
   const entries = await getCollection('blog', ({ data }) => !data.draft)
   return entries.map((entry) => {
     const { lang, slug } = splitEntryId(entry.id)

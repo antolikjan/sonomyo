@@ -105,6 +105,10 @@ export const ui = {
         'ultra' : 'Během ultrazvukového vyšetření se pod bradu umísti malá ultrazvuková sonda která vizualizuje pohyb jazyka na monitoru na který se klient dívá. Tyto informace používáme k nácviku přesnějšího umístění jazyka a k budování konzistentních phybových vzorců v průběhu terapie. <br><br>(Jedná se o školení a koučování – nikoli o lékařskou diagnózu.)',
         'collaboration_title' : 'Rádi <strong>spolupracujeme</strong>!',
         'collaboration' :  'Pokud v současné době spolupracujete s logopedem, rádi s vámi budeme spolupracovat, aby vaše cíle zůstaly sladěny.',
+      },
+      blog : {
+          'title': '<strong>SonoMyo</strong> Blog. Tipy, Novinky & Články',
+          'text': 'Zůstaňte informovány. Všechny nejnovější informace ze světa myofunkční terapie a logopedie.'
       }
   },
   en: {
@@ -210,7 +214,12 @@ export const ui = {
         'ultra' : 'During an ultrasound session, a small ultrasound probe is held under the chin to visualize tongue movement. We use this information to coach more accurate tongue placement and help build consistent patterns over time. <br><br> (This is training and coaching—not a medical diagnosis.)',
         'collaboration_title' : '<strong>Collaborative</strong> approach',        
         'collaboration' : 'If you are currently working with a  Orthodontist or Speech-Language Pathologis, we’re happy to collaborate so your treatment goals stay aligned.',
+      },
+      blog : {
+          'title': 'The <strong>SonoMyo</strong> Blog. Tips, Updates & Stories',
+          'text': 'Stay informed. All the latest from the world of myofunctional therapy and speech science.'
       }
+
   },
 } as const;
 

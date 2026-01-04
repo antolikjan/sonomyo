@@ -1,9 +1,10 @@
 ---
 title: 'What is the correct tongue-at-rest position?'
-pubDate: 2026-03-01T05:00:00Z
+pubDate: 2026-01-04T05:00:00Z
 description: ""
 author: 'Tanja Kocjnančič Antolík'
 image: '/blog/post-01-cover.png'
+heroImage: '/blog/post-01.png'
 tags: ['tongue', 'self-help']
 ---
 
