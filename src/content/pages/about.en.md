@@ -10,7 +10,7 @@ Speech is one of the most complex and frequent human activities, necessary for e
 
 **MSc in Clinical linguistics**, University of Potsdam, Germany.
 
-**BA in Speech and language therapy**, University of Ljubljana, Slovenia.
+**BA in Speech and language therapy and special education for deaf**, University of Ljubljana, Slovenia.
 
 
 ## Work experience

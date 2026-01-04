@@ -9,7 +9,7 @@ title: "Tanja Kocjančič, PhD "
 
 **MSc v klinické lingvistice**, Univerzita v Postupimi, Německo.
 
-**BA v logopedii (Speech and language therapy)**, Univerzita v Lublani, Slovinsko.
+**BA v logopedii a surdopedagogike**, Univerzita v Lublani, Slovinsko.
 
 ## Pracovní zkušenosti
 
