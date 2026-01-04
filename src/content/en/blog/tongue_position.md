@@ -3,12 +3,14 @@ title: 'What is the correct tongue-at-rest position?'
 pubDate: 2026-01-04T05:00:00Z
 description: ""
 author: 'Tanja Kocjnančič Antolík'
-image: '/blog/post-01-cover.png'
+image: '/blog/post-01.png'
 heroImage: '/blog/post-01.png'
 tags: ['tongue', 'self-help']
 ---
 
-The tongue-at-rest position describes the position of the tongue outside of any activity. Throughout the day (and night), the tongue is one of the busiest parts of our body. We use it for speech, but also for chewing, swallowing food, drinks, and saliva. The quality and effectiveness of speaking, chewing, and swallowing greatly depend on tongue activity. However, the tongue has a very important function even when it doesn’t do anything - at rest.
+![aa](/blog/post-01.png)
+
+The tongue-at-rest position describes the position of the tongue outside of any activity. Throughout the day (and night), the tongue is one of the busiest parts of our body. We use it for speech, but also for chewing, swallowing food, drinks, and saliva. The quality and effectiveness of speaking, chewing, and swallowing greatly depend on tongue activity. **However, the tongue has a very important function even when it doesn’t do anything - at rest.**
 
 At rest, the tongue should be in a relaxed position, supported with the palate, gently closed lips, and accompanied by nasal breathing.
 

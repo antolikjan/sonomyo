@@ -11,17 +11,17 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
 	{
 		name: 'facebook',
-		link: '/',
+		link: 'https://www.facebook.com/SonoMyo/',
 		icon: 'fb-icon'
 	},
 	{
-		name: 'twitter',
-		link: '/',
-		icon: 'twitter-icon'
+		name: 'instagram',
+		link: 'https://www.instagram.com/sonomyo_praha/',
+		icon: 'instagram-icon'
 	},
 	{
-		name: 'discord',
-		link: '/',
-		icon: 'discord-icon'
+		name: 'linkedin',
+		link: 'https://www.linkedin.com/in/tanja-kocjan%C4%8Di%C4%8D-antol%C3%ADk/',
+		icon: 'linkedin-icon'
 	}
 ]

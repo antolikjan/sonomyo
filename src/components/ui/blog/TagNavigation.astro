@@ -1,36 +1,54 @@
 ---
 // Tags for the Blog and post pages
 
-// Components
-// - UI
 import Badge from '../Badge.astro'
-
-//Data
 import { getCollection } from 'astro:content'
-const posts = await getCollection('blog')
-const tags = [...new Set(posts.map((post) => post.data.tags).flat())]
+
+type Props = {
+  lang: 'cs' | 'en'
+}
+
+const { lang } = Astro.props
+
+// Only posts in the current language:
+const posts = await getCollection('blog', ({ id, data }) =>
+  id.startsWith(`${lang}/blog/`) && !data.draft
+)
+
+// Collect unique tags (guard against missing tags)
+const tags = [
+  ...new Set(
+    posts.flatMap((post) => post.data.tags ?? [])
+  ),
+].sort()
+
+// Determine current tag from URL (works for /:lang/blog/tags/:tag)
 const currentPath = new URL(Astro.request.url).pathname
-const pathSegments = currentPath.split('/').filter((segment) => segment.length > 0)
-const currentTag = pathSegments[pathSegments.length - 1] || ''
+const segments = currentPath.split('/').filter(Boolean)
+const currentTag = segments[segments.length - 1] || ''
+
+// Are we on the blog index ("/:lang/blog") or tags root ("/:lang/blog/tags")?
+const isAllActive = currentPath === `/${lang}/blog` || currentPath === `/${lang}/blog/`
 ---
 
 <div class="tags">
-	<Badge link={`/blog/`} name={`All`} type={`${currentTag === 'blog' ? 'primary' : 'neutral'}`} />
-	{
-		tags.map((tag) => (
-			<>
-				<Badge
-					link={`/blog/tags/${tag}`}
-					name={tag}
-					type={`${currentTag === tag ? 'primary' : 'neutral'}`}
-				/>
-			</>
-		))
-	}
+  <Badge
+    link={`/${lang}/blog`}
+    name="All"
+    type={isAllActive ? 'primary' : 'neutral'}
+  />
+
+  {tags.map((tag) => (
+    <Badge
+      link={`/${lang}/blog/tags/${tag}`}
+      name={tag}
+      type={currentTag === tag ? 'primary' : 'neutral'}
+    />
+  ))}
 </div>
 
 <style>
-	.tags {
-		@apply mb-6 flex flex-row flex-wrap items-center justify-start gap-2 capitalize;
-	}
+  .tags {
+    @apply mb-6 flex flex-row flex-wrap items-center justify-start gap-2 capitalize;
+  }
 </style>

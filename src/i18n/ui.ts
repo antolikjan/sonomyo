@@ -107,7 +107,7 @@ export const ui = {
         'collaboration' :  'Pokud v současné době spolupracujete s logopedem, rádi s vámi budeme spolupracovat, aby vaše cíle zůstaly sladěny.',
       },
       blog : {
-          'title': '<strong>SonoMyo</strong> Blog. Tipy, Novinky & Články',
+          'title': '<strong>SonoMyo</strong> Blog',
           'text': 'Zůstaňte informovány. Všechny nejnovější informace ze světa myofunkční terapie a logopedie.'
       }
   },
@@ -216,7 +216,7 @@ export const ui = {
         'collaboration' : 'If you are currently working with a  Orthodontist or Speech-Language Pathologis, we’re happy to collaborate so your treatment goals stay aligned.',
       },
       blog : {
-          'title': 'The <strong>SonoMyo</strong> Blog. Tips, Updates & Stories',
+          'title': 'The <strong>SonoMyo</strong> Blog.',
           'text': 'Stay informed. All the latest from the world of myofunctional therapy and speech science.'
       }
 

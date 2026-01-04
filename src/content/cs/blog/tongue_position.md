@@ -1,23 +1,25 @@
 ---
-title: 'What is the correct tongue-at-rest position?'
+title: 'Jaká je správná klidová poloha jazyka?'
 pubDate: 2026-01-04T05:00:00Z
 description: ""
-author: 'Tanja Kocjnančič Antolík'
-image: '/blog/post-01-cover.png'
+autor: 'Tanja Kocjnančič Antolík'
+image: '/blog/post-01.png'
 heroImage: '/blog/post-01.png'
-tags: ['tongue', 'self-help']
+tags: ['jazyk', 'svépomoc']
 ---
 
-The tongue-at-rest position describes the position of the tongue outside of any activity. Throughout the day (and night), the tongue is one of the busiest parts of our body. We use it for speech, but also for chewing, swallowing food, drinks, and saliva. The quality and effectiveness of speaking, chewing, and swallowing greatly depend on tongue activity. However, the tongue has a very important function even when it doesn’t do anything - at rest.
+![](/blog/post-01.png)
 
-At rest, the tongue should be in a relaxed position, supported with the palate, gently closed lips, and accompanied by nasal breathing.
+Klidová poloha jazyka popisuje polohu jazyka při absenci jakékoliv činnosti. Během dne (a noci) je jazyk jednou z nejrušnějších částí našeho těla. Používáme ho k řeči, ale také ke žvýkání, polykání jídla, pití a slin. Kvalita a účinnost mluvení, žvýkání a polykání do značné míry závisí na činnosti jazyka. **Jazyk však má velmi důležitou funkci i tehdy, když nic nedělá – v klidu.**
 
-What it should feel/look like:
+V klidu by měl být jazyk v uvolněné poloze, podepřený patrem, s jemně sevřenými rty a doprovázený nosním dýcháním.
 
-* **Tongue tip**: Tongue tip lightly touches the little ridge just behind your upper front teeth (the alveolar ridge). Importantly, it does not touch the teeth.
-* **Tongue body**: The front third to half of the tongue body rest up against the roof of your mouth (the palate), like a gentle suction.
-* **Tongue sides**: The sides of the tongue rest softly against the lower edge of the upper palate at the border with the upper molars area. This is a gentle contact, not force.
-* **Jaw and teeth**: Jaw is relaxed. Teeth are slightly apart  or very lightly touching in some people. Again, there is no strong pressing.
-* **Lips**: Lips are closed and relaxed.
-* **Breathing**: Through the nose, quiet and easy.
+Jak by měl vypadat/cítit se:
+
+* **Špička jazyka**: Špička jazyka se lehce dotýká malého hřebene těsně za horními předními zuby (alveolární hřeben). Důležité je, aby se nedotýkala zubů.
+* **Tělo jazyka**: Přední třetina až polovina těla jazyka se opírá o patro (patro), jako by jemně sál.
+* **Boky jazyka**: Boky jazyka se jemně opírají o spodní okraj horního patra na hranici s oblastí horních stoliček. Jedná se o jemný kontakt, nikoli o sílu.
+* **Čelist a zuby**: Čelist je uvolněná. Zuby jsou u některých lidí mírně od sebe vzdálené nebo se velmi lehce dotýkají. Opět nedochází k silnému tlaku.
+* **Rty**: Rty jsou sevřené a uvolněné.
+* **Dýchání**: Nosem, klidné a snadné.
 
