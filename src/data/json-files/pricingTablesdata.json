@@ -28,7 +28,7 @@
 						"title": "Practice session (30m)",
 						"subtitle": "Single practice session lasting 30 minutes.",
 						"currency": "Kč",
-						"price": "400"
+						"price": "700"
 					},
 					"body": {
 						"listItems": [
@@ -49,7 +49,7 @@
 						"title": "Practice session (60m)",
 						"subtitle": "Single practice session lasting 30 minutes.",
 						"currency": "Kč",
-						"price": "700"
+						"price": "1200"
 					},
 					"body": {
 						"listItems": [
@@ -70,7 +70,7 @@
 						"title": "Package of 10 (60m)",
 						"subtitle": "Package of 10 60-minute practice session.",
 						"currency": "Kč",
-						"price": "6000"
+						"price": "9000"
 					},
 					"body": {
 						"listItems": [
@@ -91,7 +91,7 @@
 						"title": "Package of 10 (30m)",
 						"subtitle": "Package of 10 30-minute practice session.",
 						"currency": "Kč",
-						"price": "3000"
+						"price": "5000"
 					},
 					"body": {
 						"listItems": [
@@ -112,7 +112,7 @@
 						"title": "Proffesional consultancy",
 						"subtitle": "Tap into my 15 years of research experience.",
 						"currency": "Kč/hour",
-						"price": "1500"
+						"price": "1600"
 					},
 					"body": {
 						"listItems": [
@@ -158,7 +158,7 @@
 						"title": "Kontrolní prohlídka (30m)",
 						"subtitle": "Prohlíkda a nácvik trvající 30 minut.",
 						"currency": "Kč",
-						"price": "400"
+						"price": "700"
 					},
 					"body": {
 						"listItems": [
@@ -179,7 +179,7 @@
 						"title": "Kontrolní prohlídka (60m)",
 						"subtitle": "Prohlíkda a nácvik trvající 60 minut.",
 						"currency": "Kč",
-						"price": "700"
+						"price": "1200"
 					},
 					"body": {
 						"listItems": [
@@ -200,7 +200,7 @@
 						"title": "Balíček 10 prohlídek (30m)",
 						"subtitle": "Package of 10 30-minute practice session.",
 						"currency": "Kč",
-						"price": "3000"
+						"price": "5000"
 					},
 					"body": {
 						"listItems": [
@@ -221,7 +221,7 @@
 						"title": "Balíček 10 prohlídek (60m)",
 						"subtitle": "Package of 10 60-minute practice session.",
 						"currency": "Kč",
-						"price": "6000"
+						"price": "9000"
 					},
 					"body": {
 						"listItems": [
@@ -242,7 +242,7 @@
 						"title": "Konzultace",
 						"subtitle": "Využijte 20 let mých zkušeností ve vízkume řeči.",
 						"currency": "Kč/hod",
-						"price": "1500"
+						"price": "1600"
 					},
 					"body": {
 						"listItems": [

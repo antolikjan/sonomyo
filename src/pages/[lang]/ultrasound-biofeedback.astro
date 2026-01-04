@@ -1,44 +1,40 @@
 ---
-// Components
-// - Layout
-import Layout from '../../layouts/Layout.astro'
-// - UI
-import Hero from '../../components/blocks/hero/PageHeader.astro'
-import { ui } from '../../i18n/ui'
+import Layout from '../../layouts/PostLayout.astro'
+import { getCollection, render } from 'astro:content'
 
-import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
-import CTA from '../../components/blocks/testimonials/CTA.astro'
-import Spacer from '../../components/ui/Spacer.astro'
+const LANG_RE = /\.(cs|en)$/
 
-
-import ultrasound_feedback from '../../assets/images/ultrasound_feedback.png'
-import ultrasound_session from '../../assets/images/ultrasound_session.png'
-import collaboration from '../../assets/images/collaboration.png'
-
-
-// - SEO
-const SEO = {
-	title: 'Sonomyo | Ulrasound guided myofunctional therapy practice.',
-	description:
-		'Sonomyo is a ulrasound guided myofunctional therapy practice.'
+function getLangFromEntryId(id: string) {
+  const m = id.match(LANG_RE)
+  return m ? (m[1] as 'cs' | 'en') : null
 }
 
-export function getStaticPaths() {
-  return [
-    { params: { lang: 'cs' } },
-    { params: { lang: 'en' } },
-  ];
+function getBaseSlug(id: string) {
+  return id.replace(LANG_RE, '') // blog1.en -> blog1
 }
 
-const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
-const t = ui[lang].ultrasound_imaging
+export async function getStaticPaths() {
+  const entries = await getCollection('blog')
 
+  return entries
+    .map((entry) => {
+      const lang = getLangFromEntryId(entry.id)
+      if (!lang) return null
+
+      return {
+        params: { lang, id: getBaseSlug(entry.id) }, // /en/blog/blog1
+        props: { entry },
+      }
+    })
+    .filter(Boolean)
+}
+
+const { entry } = Astro.props
+const { Content } = await render(entry)
+
+// This is your “current language” for this page instance:
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
 ---
-
-<Layout title={SEO.title} description={SEO.description}>
-	<Hero title={t["title"]} text={t["text"]} image={ultrasound_feedback} bgColor='#d4e6fe'/>
-	<HighlightBlock image={ultrasound_session} title={t["ultra_title"]} text={t["ultra"]}/>
-	<HighlightBlock image={collaboration} title={t["collaboration_title"]} text={t["collaboration"]} bgColor='#d4e6fe' imagePosition='left'/>
-	<Spacer size="12" desktopSize="24" bg="bg-[#d4e6fe]" />
-    <CTA/>
+<Layout frontmatter={entry.data} lang={lang}>
+  <Content />
 </Layout>

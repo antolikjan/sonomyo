@@ -1,27 +1,21 @@
 ---
-// Blog Tags Page
-// ------------
-// Description: The blog tags page.
-
-// Components
-// - Layout
 import Layout from '../../../../layouts/Layout.astro'
-// - UI
 import Hero from '../../../../components/blocks/hero/PageHeader.astro'
 import BlogPosts from '../../../../components/blocks/blog/BlogPosts.astro'
-
-// Data
 import { getCollection } from 'astro:content'
-const allPosts = await getCollection('blog')
 
 export async function getStaticPaths() {
-  return ['cs', 'en'].map((lang) => ({
-    params: { lang }
-  }));
+  return ['cs', 'en'].map((lang) => ({ params: { lang } }))
 }
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
+
+const posts = await getCollection('blog', ({ id, data }) =>
+  id.startsWith(`${lang}/blog/`) && !data.draft
+)
 ---
 
 <Layout>
-	<Hero title="Tags" />
-	<BlogPosts data={allPosts} />
+  <Hero title="Tags" />
+  <BlogPosts data={posts} lang={lang}/>
 </Layout>

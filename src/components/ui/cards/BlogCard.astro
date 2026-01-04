@@ -39,7 +39,8 @@ const {
 ---
 
 <Card classes={classes}>
-	{image && <Image src={image} alt={title} width={600} height={400} />}
+	{image && <img src={image} alt={title} class="rounded-2xl" loading="lazy" />}
+
 	<CardBody>
 		<h3 class="post-title">
 			<a href={link}>{title}</a>

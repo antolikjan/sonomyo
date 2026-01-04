@@ -70,7 +70,11 @@ const {
 
 <style>
 	.text-image__picture {
-		@apply flex justify-center lg:[&.text-image\_\_picture--offset-right_img]:left-0 lg:[&.text-image\_\_picture--offset-right_img]:right-auto lg:[&.text-image\_\_picture--offset]:h-full lg:[&.text-image\_\_picture--offset_img]:absolute lg:[&.text-image\_\_picture--offset_img]:right-0 lg:[&.text-image\_\_picture--offset_img]:top-1/2 lg:[&.text-image\_\_picture--offset_img]:max-w-none lg:[&.text-image\_\_picture--offset_img]:-translate-y-1/2;
+		@apply flex justify-center overflow-hidden rounded-2xl;
+		@apply lg:[&.text-image\_\_picture--offset-right_img]:left-0 lg:[&.text-image\_\_picture--offset-right_img]:right-auto lg:[&.text-image\_\_picture--offset]:h-full lg:[&.text-image\_\_picture--offset_img]:absolute lg:[&.text-image\_\_picture--offset_img]:right-0 lg:[&.text-image\_\_picture--offset_img]:top-1/2 lg:[&.text-image\_\_picture--offset_img]:max-w-none lg:[&.text-image\_\_picture--offset_img]:-translate-y-1/2;
+	}
+	.text-image__picture img {
+		@apply rounded-3xl shadow-sm ring-1 ring-neutral-200 dark:ring-neutral-800;
 	}
 	.text-image__content {
 		@apply max-w-xl;

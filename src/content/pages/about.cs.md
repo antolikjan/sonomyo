@@ -3,6 +3,14 @@ title: "Tanja Kocjančič, PhD "
 ---
 Řeč je jednou z nejkomplexnějších a nejčastějších lidských činností, nezbytnou pro vyjadřování našich nápadů, přání, starostí… Přijde mi fascinující, že o tom, *jak* mluvíme, většinou vůbec nemusíme přemýšlet. Až dokud nenastane proucha. Problémy s řečí, ať už v mateřském nebo cizím jazyce, vedou ke sníženému porozumění tomu, co jsme řekli, a mohou výrazně omezit komunikaci s ostatními. Naštěstí lze téměř všechny poruchy řeči zlepšit a často je možné je zcela odstranit. Jsem nesmírně ráda, že mohu být součástí tohoto procesu.
 
+## Vzdělání
+
+**PhD ve vědě o řeči (Speech Science)**, Queen Margaret University, Edinburgh, Velká Británie.
+
+**MSc v klinické lingvistice**, Univerzita v Postupimi, Německo.
+
+**BA v logopedii (Speech and language therapy)**, Univerzita v Lublani, Slovinsko.
+
 ## Pracovní zkušenosti
 
 Mám rozsáhlé zkušenosti s výzkumem typické řeči, řeči v cizích jazycích a poruch řeči. Jako výzkumnice jsem se podílela na řadě projektů zaměřených na:
@@ -18,17 +26,9 @@ Své studium a profesionální kariéru jsem podstoupila v několika zemích (Sl
 
 ## Současné akademické aktivity
 
-V současnosti se věnuji tomuto výzkumu a vyučuji logopedii jako:
-* výzkumná pracovnice na [Univerzitě Karlově](https://fonetika.ff.cuni.cz/ustav/vyucujici/tanja-kocjancic/), Praha
-* odborná asistentka (assistant professor) na [Univerzitě v Lublani](https://www.pef.uni-lj.si/imenik/tanja-kocjancic-antolik/), Slovinsko
-
-## Vzdělání
-
-**PhD ve vědě o řeči (Speech Science)**, Queen Margaret University, Edinburgh, Velká Británie.
-
-**MSc v klinické lingvistice**, Univerzita v Postupimi, Německo.
-
-**BA v logopedii (Speech and language therapy)**, Univerzita v Lublani, Slovinsko.
+V současnosti se věnuji výzkumu a vyučuji logopedii jako:
+* výzkumná pracovnice na [Univerzitě Karlově](https://fonetika.ff.cuni.cz/ustav/vyucujici/tanja-kocjancic/) (Praha)
+* odborná asistentka (assistant professor) na [Univerzitě v Lublani](https://www.pef.uni-lj.si/imenik/tanja-kocjancic-antolik/) (Slovinsko)
 
 ## Jazyky
 Mým mateřským jazykem je slovinština. Plynně hovořím anglicky a bez problémů se domluvím také česky a slovensky.

@@ -116,10 +116,6 @@ const savedNavActions = navActions.map((action) => ({
 				}
 			</ul>
 
-			<!-- Theme Switcher -->
-			<Switcher />
-
-
 			<!-- Navigation action buttons -->
 			<div class="header__actions">
 			<a
@@ -132,9 +128,8 @@ const savedNavActions = navActions.map((action) => ({
 				{lang === 'en' ? '🇨🇿' : '🇬🇧' }
 				</span>
 			</a>
-
-			{
-				savedNavActions.map((action) => (+
+			{   
+				savedNavActions.map((action) => (
 				<a href={action.link} class="flex-auto">
 					<Button size={action.size} style={action.style}>
 					{t.nav[action.name] ?? action.name}		

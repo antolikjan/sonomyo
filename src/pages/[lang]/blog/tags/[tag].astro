@@ -1,55 +1,40 @@
 ---
-// Blog Tag Page
-// ------------
-// Description: The blog tag page.
-
-// Components
-// - Layout
 import Layout from '../../../../layouts/Layout.astro'
-// - UI
 import Hero from '../../../../components/blocks/hero/PageHeader.astro'
 import BlogPosts from '../../../../components/blocks/blog/BlogPosts.astro'
-
-// Data
 import { getCollection } from 'astro:content'
 
+const langs = ['cs', 'en'] as const
+
 export async function getStaticPaths() {
-  const allPosts = await getCollection('blog')
-  const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags ?? []))]
+  const allPosts = await getCollection('blog', ({ data }) => !data.draft)
 
-  const langs = ['cs', 'en'] as const
+  return langs.flatMap((lang) => {
+    const postsInLang = allPosts.filter((p) => p.id.startsWith(`${lang}/blog/`))
+    const uniqueTags = [...new Set(postsInLang.flatMap((p) => p.data.tags ?? []))]
 
-  return langs.flatMap((lang) =>
-    uniqueTags.map((tag) => {
-      const filteredPosts = allPosts.filter((post) => (post.data.tags ?? []).includes(tag))
-      return {
-        params: { lang, tag },
-        props: { posts: filteredPosts, tag },
-      }
+    return uniqueTags.map((tag) => {
+      const filteredPosts = postsInLang.filter((p) => (p.data.tags ?? []).includes(tag))
+      return { params: { lang, tag }, props: { posts: filteredPosts, tag } }
     })
-  )
+  })
 }
 
-
-const { tag, lang } = Astro.params
+const { tag } = Astro.params
 const { posts } = Astro.props
 
-// Content
-// - SEO
 const SEO = {
-	title: `Foxi | posts tagges as ` + tag,
-	description:
-		"Explore Foxi's latest news designed to enhance productivity, ensure top-notch security, and integrate seamlessly with your favorite tools. Join thousands of satisfied users and transform your workflow with Foxi today!"
+  title: `Sonomyo | posts tagged as ${tag}`,
+  description: `Posts tagged as ${tag}.`,
 }
 
-// - Page Header
 const header = {
-	title: `Foxi posts about <br><strong>` + tag + `</strong>`,
-	text: `Stay informed, stay productive with all the latest fromFoxi.`
+  title: `Posts about <br><strong>${tag}</strong>`,
+  text: `Browse posts in this topic.`,
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<Hero title={header.title} text={header.text} />
-	<BlogPosts data={posts} />
+  <Hero title={header.title} text={header.text} />
+  <BlogPosts data={posts} lang={lang}/>
 </Layout>

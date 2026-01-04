@@ -11,7 +11,7 @@ import puckered_lips from '../../assets/images/puckered_lips.png'
 import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
 import CTA from '../../components/blocks/testimonials/CTA.astro'
 import ServicesGrid from '../../components/blocks/features/ServiceGrid.astro'
-
+import Spacer from '../../components/ui/Spacer.astro'
 
 import boy_wit_tongue_touching_lips from '../../assets/images/boy_wit_tongue_touching_lips.png'
 import braces from '../../assets/images/braces.png'
@@ -41,7 +41,7 @@ const t = ui[lang].myofunctional_therapy
 <Layout title={SEO.title} description={SEO.description}>
 		<Hero title={t["title"]} text={t["text"]} image={muscle_head} bgColor='#d4e6fe'/>
     <HighlightBlock image={puckered_lips} title={t["workwith_title"]} text={t["workwith_text"]}  />
-
+	  <Spacer size="12" desktopSize="24" bg="bg-[#ffffff]" /> 
     <ServicesGrid
       title={t["offer_title"]}
       intro={t["offer_text"]}

@@ -4,6 +4,14 @@ title: "About Tanja Kocjančič, PhD "
 
 Speech is one of the most complex and frequent human activities, necessary for expressing our ideas, wishes, troubles... I find it fascinating that we never have to think about how to speak until a disruption happens. Problems with speech, either in a first or foreign language, lead to reduced comprehension of what we said, and can significantly limit communication with others. Fortunately, almost all speech problems can be improved, and often completely removed. I feel privileged to be part of this process.
 
+## Education
+
+**PhD in Speech Science**, Queen Margaret University, Edinburgh, UK.
+
+**MSc in Clinical linguistics**, University of Potsdam, Germany.
+
+**BA in Speech and language therapy**, University of Ljubljana, Slovenia.
+
 
 ## Work experience
 
@@ -20,17 +28,10 @@ Finally, I have studied and worked in several countries (Slovenia, Czech Republi
 
 ## Current academic activities
 
-Currently I undertake this research and teach speech and language therapy as:
-* Research Fellow at [Charles University](https://fonetika.ff.cuni.cz/ustav/vyucujici/tanja-kocjancic/), Prague. 
-* Assitant Professor at [University of Ljubljana](https://www.pef.uni-lj.si/imenik/tanja-kocjancic-antolik/), Slovenia.
+Currently I undertake research and teach speech and language therapy as:
+* Research Fellow at [Charles University](https://fonetika.ff.cuni.cz/ustav/vyucujici/tanja-kocjancic/) (Prague)
+* Assitant Professor at [University of Ljubljana](https://www.pef.uni-lj.si/imenik/tanja-kocjancic-antolik/) (Slovenia)
 
-## Education
-
-**PhD in Speech Science**, Queen Margaret University, Edinburgh, UK.
-
-**MSc in Clinical linguistics**, University of Potsdam, Germany.
-
-**BA in Speech and language therapy**, University of Ljubljana, Slovenia.
 
 ## Languages
 My first language is Slovenian, I speak fluent English, as well as conversational Czech and Slovak.

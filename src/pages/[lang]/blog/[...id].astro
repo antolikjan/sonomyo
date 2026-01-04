@@ -1,23 +1,24 @@
 ---
-// Blog Post Page
-// ------------
-// Description: The blog post page.
-
-// Components
-// - Layout
 import Layout from '../../../layouts/PostLayout.astro'
 import { getCollection, render } from 'astro:content'
 
-export async function getStaticPaths() {
-  const entries = await getCollection('blog')
-  const langs = ['cs', 'en'] as const
+function splitEntryId(entryId: string) {
+  // entryId example: "cs/blog/tongue_position"
+  const parts = entryId.split('/')
+  const lang = parts[0]              // "cs" | "en"
+  const slug = parts.slice(2).join('/') // after "cs/blog/"
+  return { lang, slug }
+}
 
-  return langs.flatMap((lang) =>
-    entries.map((entry) => ({
-      params: { lang, id: entry.id },   // <-- important: include lang
-      props: { entry }                  // <-- important: provide entry
-    }))
-  )
+export async function getStaticPaths() {
+  const entries = await getCollection('blog', ({ data }) => !data.draft) // optional filter
+  return entries.map((entry) => {
+    const { lang, slug } = splitEntryId(entry.id)
+    return {
+      params: { lang, id: slug }, // /cs/blog/tongue_position
+      props: { entry },
+    }
+  })
 }
 
 const { entry } = Astro.props
