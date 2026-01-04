@@ -4,9 +4,10 @@ import Hero from '../../../../components/blocks/hero/PageHeader.astro'
 import BlogPosts from '../../../../components/blocks/blog/BlogPosts.astro'
 import { getCollection } from 'astro:content'
 
-const langs = ['cs', 'en'] as const
-
 export async function getStaticPaths() {
+
+  const langs = ['cs', 'en'] as const
+
   const allPosts = await getCollection('blog', ({ data }) => !data.draft)
 
   return langs.flatMap((lang) => {

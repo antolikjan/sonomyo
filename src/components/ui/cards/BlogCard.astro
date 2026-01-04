@@ -27,6 +27,7 @@ type Props = {
 	link?: string
 	classes?: string
 	tags?: string[]
+	lang? : string
 }
 const {
 	title = '',
@@ -34,8 +35,11 @@ const {
 	image,
 	link,
 	classes = '!shadow-none border border-neutral-100 dark:border-neutral-800',
-	tags
+	tags,
+	lang
 } = Astro.props
+
+
 ---
 
 <Card classes={classes}>
@@ -53,7 +57,7 @@ const {
 		tags && (
 			<div class="post-tags">
 				{tags.map((tag: string) => (
-					<Badge name={tag} link={`/blog/tags/` + tag} classes="capitalize" />
+					<Badge name={tag} link={`/${lang}/blog/tags/${encodeURIComponent(tag)}`} classes="capitalize" />
 				))}
 			</div>
 		)

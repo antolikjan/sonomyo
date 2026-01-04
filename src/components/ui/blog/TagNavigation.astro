@@ -4,30 +4,20 @@
 import Badge from '../Badge.astro'
 import { getCollection } from 'astro:content'
 
-type Props = {
-  lang: 'cs' | 'en'
-}
-
+type Props = { lang: 'cs' | 'en' }
 const { lang } = Astro.props
 
-// Only posts in the current language:
 const posts = await getCollection('blog', ({ id, data }) =>
   id.startsWith(`${lang}/blog/`) && !data.draft
 )
 
-// Collect unique tags (guard against missing tags)
-const tags = [
-  ...new Set(
-    posts.flatMap((post) => post.data.tags ?? [])
-  ),
-].sort()
+const tags = [...new Set(posts.flatMap((p) => p.data.tags ?? []))].sort()
 
-// Determine current tag from URL (works for /:lang/blog/tags/:tag)
 const currentPath = new URL(Astro.request.url).pathname
 const segments = currentPath.split('/').filter(Boolean)
-const currentTag = segments[segments.length - 1] || ''
+const currentTagRaw = segments[segments.length - 1] || ''
+const currentTag = decodeURIComponent(currentTagRaw)
 
-// Are we on the blog index ("/:lang/blog") or tags root ("/:lang/blog/tags")?
 const isAllActive = currentPath === `/${lang}/blog` || currentPath === `/${lang}/blog/`
 ---
 
@@ -40,15 +30,9 @@ const isAllActive = currentPath === `/${lang}/blog` || currentPath === `/${lang}
 
   {tags.map((tag) => (
     <Badge
-      link={`/${lang}/blog/tags/${tag}`}
+      link={`/${lang}/blog/tags/${encodeURIComponent(tag)}`}
       name={tag}
       type={currentTag === tag ? 'primary' : 'neutral'}
     />
   ))}
 </div>
-
-<style>
-  .tags {
-    @apply mb-6 flex flex-row flex-wrap items-center justify-start gap-2 capitalize;
-  }
-</style>
