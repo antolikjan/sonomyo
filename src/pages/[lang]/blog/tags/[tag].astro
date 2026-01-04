@@ -32,6 +32,8 @@ const header = {
   title: `Posts about <br><strong>${tag}</strong>`,
   text: `Browse posts in this topic.`,
 }
+
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
