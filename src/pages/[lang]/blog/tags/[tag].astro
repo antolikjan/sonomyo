@@ -10,34 +10,41 @@ export async function getStaticPaths() {
 
   const allPosts = await getCollection('blog', ({ data }) => !data.draft)
 
-  return langs.flatMap((lang) => {
-    const postsInLang = allPosts.filter((p) => p.id.startsWith(`${lang}/blog/`))
-    const uniqueTags = [...new Set(postsInLang.flatMap((p) => p.data.tags ?? []))]
+  // union of tags across BOTH languages
+  const allTags = [...new Set(allPosts.flatMap((p) => p.data.tags ?? []))]
 
-    return uniqueTags.map((tag) => {
-      const filteredPosts = postsInLang.filter((p) => (p.data.tags ?? []).includes(tag))
-      return { params: { lang, tag }, props: { posts: filteredPosts, tag } }
+  return langs.flatMap((lang) =>
+    allTags.map((tag) => {
+      const postsInLang = allPosts.filter(
+        (p) => p.id.startsWith(`${lang}/blog/`) && (p.data.tags ?? []).includes(tag)
+      )
+
+      return {
+        params: { lang, tag: encodeURIComponent(tag) },
+        props: { posts: postsInLang, tag }, // tag here is the display tag
+      }
     })
-  })
-}
-
-const { tag } = Astro.params
-const { posts } = Astro.props
-
-const SEO = {
-  title: `Sonomyo | posts tagged as ${tag}`,
-  description: `Posts tagged as ${tag}.`,
-}
-
-const header = {
-  title: `Posts about <br><strong>${tag}</strong>`,
-  text: `Browse posts in this topic.`,
+  )
 }
 
 const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
----
+const tagFromUrl = decodeURIComponent(Astro.params.tag)
+const { posts } = Astro.props
 
-<Layout title={SEO.title} description={SEO.description}>
+const header = {
+  title: `Posts about <br><strong>${tagFromUrl}</strong>`,
+  text: posts.length ? '' : 'No posts for this tag in this language (yet).',
+}
+---
+<Layout title={`Sonomyo | ${tagFromUrl}`}>
   <Hero title={header.title} text={header.text} />
-  <BlogPosts data={posts} lang={lang}/>
+
+  {posts.length ? (
+    <BlogPosts data={posts} lang={lang} />
+  ) : (
+    <div class="mx-auto max-w-3xl px-6 pb-12">
+      <a class="text-primary-700 underline" href={`/${lang}/blog`}>Back to blog</a>
+    </div>
+  )}
 </Layout>
+1

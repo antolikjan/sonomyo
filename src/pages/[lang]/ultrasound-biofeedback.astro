@@ -1,42 +1,45 @@
 ---
-import Layout from '../../layouts/PostLayout.astro'
-import { getCollection, render } from 'astro:content'
+// Components
+// - Layout
+import Layout from '../../layouts/Layout.astro'
+// - UI
+import Hero from '../../components/blocks/hero/PageHeader.astro'
+import { ui } from '../../i18n/ui'
 
-export async function getStaticPaths() {
-
-  const LANG_RE = /\.(cs|en)$/
-
-  function getLangFromEntryId(id: string) {
-    const m = id.match(LANG_RE)
-    return m ? (m[1] as 'cs' | 'en') : null
-  }
-
-  function getBaseSlug(id: string) {
-    return id.replace(LANG_RE, '') // blog1.en -> blog1
-  }
+import HighlightBlock from '../../components/blocks/highlights/HighlightRow.astro'
+import CTA from '../../components/blocks/testimonials/CTA.astro'
+import Spacer from '../../components/ui/Spacer.astro'
 
 
-  const entries = await getCollection('blog')
+import ultrasound_feedback from '../../assets/images/ultrasound_feedback.png'
+import ultrasound_session from '../../assets/images/ultrasound_session.png'
+import collaboration from '../../assets/images/collaboration.png'
 
-  return entries
-    .map((entry) => {
-      const lang = getLangFromEntryId(entry.id)
-      if (!lang) return null
 
-      return {
-        params: { lang, id: getBaseSlug(entry.id) }, // /en/blog/blog1
-        props: { entry },
-      }
-    })
-    .filter(Boolean)
+// - SEO
+const SEO = {
+	title: 'Sonomyo | Ulrasound guided myofunctional therapy practice.',
+	description:
+		'Sonomyo is a ulrasound guided myofunctional therapy practice.'
 }
 
-const { entry } = Astro.props
-const { Content } = await render(entry)
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'cs' } },
+    { params: { lang: 'en' } },
+  ];
+}
 
-// This is your “current language” for this page instance:
-const lang = Astro.params.lang === 'en' ? 'en' : 'cs'
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const t = ui[lang].ultrasound_imaging
+
 ---
-<Layout frontmatter={entry.data} lang={lang}>
-  <Content />
+
+<Layout title={SEO.title} description={SEO.description}>
+	<Hero title={t["title"]} text={t["text"]} image={ultrasound_feedback} bgColor='#d4e6fe'/>
+	<HighlightBlock image={ultrasound_session} title={t["ultra_title"]} text={t["ultra"]}/>
+	<Spacer size="12" desktopSize="24" bg="bg-[#ffffff]" />
+	<HighlightBlock image={collaboration} title={t["collaboration_title"]} text={t["collaboration"]} bgColor='#d4e6fe' imagePosition='left'/>
+	<Spacer size="12" desktopSize="24" bg="bg-[#d4e6fe]" />
+    <CTA/>
 </Layout>
