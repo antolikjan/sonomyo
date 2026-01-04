@@ -2,9 +2,9 @@
 import Layout from '../../layouts/PostLayout.astro'
 import { getCollection, render } from 'astro:content'
 
-const LANG_RE = /\.(cs|en)$/
-
 export async function getStaticPaths() {
+
+  const LANG_RE = /\.(cs|en)$/
 
   function getLangFromEntryId(id: string) {
     const m = id.match(LANG_RE)
