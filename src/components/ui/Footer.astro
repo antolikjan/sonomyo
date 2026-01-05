@@ -12,7 +12,8 @@ import { Icon } from 'astro-icon/components'
 import { socialLinks } from '../../config/socialLinks'
 import { footerNavigationData } from '../../config/footerNavigation'
 
-const { footerAbout, footerColumns, subFooter } = footerNavigationData
+const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
+const { footerAbout, footerColumns, subFooter } = footerNavigationData[lang]
 ---
 
 <footer class="footer">

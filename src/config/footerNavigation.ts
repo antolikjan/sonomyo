@@ -28,64 +28,132 @@ export interface SubFooter {
 }
 
 export interface FooterData {
-	footerAbout: FooterAbout
-	footerColumns: FooterColumn[]
-	subFooter: SubFooter
+	'en' : {
+		footerAbout: FooterAbout
+		footerColumns: FooterColumn[]
+		subFooter: SubFooter
+	}, 
+	'cs' : {
+		footerAbout: FooterAbout
+		footerColumns: FooterColumn[]
+		subFooter: SubFooter
+	}
 }
 
 export const footerNavigationData: FooterData = {
-	footerAbout: {
-		title: 'Sonomyo.',
-		aboutText:
-			'Sonomyo is a myfunctional therapy practice specialising in ultrasound biofeedback to speed up and ehance the therapy progress.',
-		logo: {
-			src: '/favicon.svg',
-			alt: 'Ultasound guided myfunctional therapy',
-			text: 'Sonomyo.'
+
+	'en' : {
+
+		footerAbout: {
+			title: 'SonoMyo.',
+			aboutText:
+				'SonoMyo is a myfunctional therapy practice specialising in ultrasound biofeedback to speed up and ehance the therapy progress.',
+			logo: {
+				src: '/favicon.svg',
+				alt: 'Ultasound guided myfunctional therapy',
+				text: 'SonoMyo.'
+			}
+		},
+		footerColumns: [
+			{
+				category: 'The practice',
+				subCategories: [
+					{
+						subCategory: 'Services',
+						subCategoryLink: '/services'
+					},
+					{
+						subCategory: 'FAQ',
+						subCategoryLink: '/faq'
+					},
+					{
+						subCategory: 'Pricing',
+						subCategoryLink: '/pricing'
+					},
+				]
+			},
+			{
+				category: 'About',
+				subCategories: [
+					{
+						subCategory: 'About',
+						subCategoryLink: '/About'
+					},
+					{
+						subCategory: 'News',
+						subCategoryLink: '/blog'
+					},
+				]
+			},
+			{
+				category: 'Get in touch',
+				subCategories: [
+					{
+						subCategory: 'Contact',
+						subCategoryLink: '/contact'
+					},
+				]
+			}
+		],
+		subFooter: {
+			copywriteText: '© Tanja Kocjančič Antolík 2025.'
 		}
 	},
-	footerColumns: [
-		{
-			category: 'The practice',
-			subCategories: [
-				{
-					subCategory: 'Services',
-					subCategoryLink: '/services'
-				},
-				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
-				{
-					subCategory: 'Pricing',
-					subCategoryLink: '/pricing'
-				},
-			]
+	'cs' : {
+
+		footerAbout: {
+			title: 'SonoMyo.',
+			aboutText:
+				'SonoMyo je myofunkční terapeutická praxe, specializující sa na ultrazvukem navádený biofeedback pro zefektívnění průběhu terapie.',
+			logo: {
+				src: '/favicon.svg',
+				alt: 'Ultrazvukem navádená myofunkční terapie',
+				text: 'SonoMyo.'
+			}
 		},
-		{
-			category: 'About',
-			subCategories: [
-				{
-					subCategory: 'About',
-					subCategoryLink: '/About'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-			]
+		footerColumns: [
+			{
+				category: 'Praxe',
+				subCategories: [
+					{
+						subCategory: 'Služby',
+						subCategoryLink: '/services'
+					},
+					{
+						subCategory: 'FAQ',
+						subCategoryLink: '/faq'
+					},
+					{
+						subCategory: 'Cenník',
+						subCategoryLink: '/pricing'
+					},
+				]
+			},
+			{
+				category: 'Info',
+				subCategories: [
+					{
+						subCategory: 'O mně',
+						subCategoryLink: '/About'
+					},
+					{
+						subCategory: 'Novinky',
+						subCategoryLink: '/blog'
+					},
+				]
+			},
+			{
+				category: 'Kontaktujte nás',
+				subCategories: [
+					{
+						subCategory: 'Kontakt',
+						subCategoryLink: '/contact'
+					},
+				]
+			}
+		],
+		subFooter: {
+			copywriteText: '© Tanja Kocjančič Antolík 2025.'
 		}
-	],
-	subFooter: {
-		copywriteText: '© Tanja Kocjančič Antolík 2025.'
 	}
 }
