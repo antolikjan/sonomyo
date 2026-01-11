@@ -1,260 +1,300 @@
-{ 
-	"en" :
-				[
-				{
-					"header": {
-						"title": "Entry evaluation",
-						"subtitle": "Comprehensive evaluation during the first visit.",
-						"currency": "Kč",
-						"price": "900"
+	{ 
+		"en" :
+					[
+					{
+						"header": {
+							"title": "Short (15 min) online consultation",
+							"subtitle": "An online consultation to determine whether therapy is suitable for you or your child.",
+							"currency": "",
+							"price": "FREE"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Review of client's issues" },
+								{ "listItem": "Determination of suitability of myofunctional therapy" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Tongue position at rest" },
-							{ "listItem": "Tongue mobility" },
-							{ "listItem": "Lips mobility" },
-							{ "listItem": "Mouth breathing" },
-							{ "listItem": "Pronunciation of foreign speech sounds" }
-						]
+
+					{
+						"header": {
+							"title": "Entry evaluation",
+							"subtitle": "Comprehensive evaluation during the first visit.",
+							"currency": "Kč",
+							"price": "1000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Tongue position at rest" },
+								{ "listItem": "Tongue mobility" },
+								{ "listItem": "Lips mobility" },
+								{ "listItem": "Mouth breathing" },
+								{ "listItem": "Pronunciation of foreign speech sounds" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
+					{
+						"header": {
+							"title": "Practice session (30 min)",
+							"subtitle": "Single practice session lasting 30 minutes.",
+							"currency": "Kč",
+							"price": "700"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Oral muscle exercises" },
+								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
+								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Practice session (30m)",
-						"subtitle": "Single practice session lasting 30 minutes.",
-						"currency": "Kč",
-						"price": "700"
+					{
+						"header": {
+							"title": "Practice session (45 min)",
+							"subtitle": "Single practice session lasting 45 minutes.",
+							"currency": "Kč",
+							"price": "1000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Oral muscle exercises" },
+								{ "listItem": "Myofunctional therapy MFT sTArs 4 - 8 years and 9 – 99 years" },
+								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
+								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Oral muscle exercises" },
-							{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-						]
+					{
+						"header": {
+							"title": "Package of 10 (30 min)",
+							"subtitle": "Package of 10 30-minute practice sessions.",
+							"currency": "Kč",
+							"price": "5600"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Oral muscle exercises" },
+								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
+								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
+					{
+						"header": {
+							"title": "Package of 10 (45 min)",
+							"subtitle": "Package of 10 45-minute practice sessions.",
+							"currency": "Kč",
+							"price": "8000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Oral muscle exercises" },
+								{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
+								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
+								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Practice session (45m)",
-						"subtitle": "Single practice session lasting 45 minutes.",
-						"currency": "Kč",
-						"price": "1000"
+					{
+						"header": {
+							"title": "Profesional consultancy",
+							"subtitle": "Tap into my 20 years of research experience.",
+							"currency": "Kč/hour",
+							"price": "1600"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Usage of ultrasound tongue imaging in speech therapy or foreign language learning" },
+								{ "listItem": "Interpretation of ultrasound images of the tongue" },
+								{ "listItem": "Articulation: speech sound production and evaluation" },
+								{ "listItem": "Speech disorders in children and adults" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
+					}
+					],
+		"cs" :
+					[
+					{
+						"header": {
+							"title": "Krátká (15 min) online konzultace",
+							"subtitle": "Krátká konzultace při které zjistíme, jestli je myofunkční terapie pro Vás vhodná",
+							"currency": "",
+							"price": "ZDARMA"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Prozkoumání problémů klienta" },
+								{ "listItem": "Určení vhodnosti myofunkční terapie" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Oral muscle exercises" },
-							{ "listItem": "Myofunctional therapy MFT sTArs 4 - 8 years and 9 – 99 years" },
-							{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-						]
+
+					{
+						"header": {
+							"title": "Vstupní prohlídka",
+							"subtitle": "Komplexní vyšetření během první návštěvy.",
+							"currency": "Kč",
+							"price": "1000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Pozice jazyka v klidu" },
+								{ "listItem": "Mobilita jazyka" },
+								{ "listItem": "Mobilita rtů" },
+								{ "listItem": "Dýchání ústami" },
+								{ "listItem": "Výslovnost hlásek v cizím jazyce" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
+					{
+						"header": {
+							"title": "Procvičování (30 min)",
+							"subtitle": "Prohlídka a nácvik trvající 30 minut.",
+							"currency": "Kč",
+							"price": "700"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Nácvik orálních svalů" },
+								{ "listItem": "Nácvik výslovnosti v cizím jazyce pomocí ultrazvukové zpětné vazby" },
+								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Package of 10 (30m)",
-						"subtitle": "Package of 10 30-minute practice session.",
-						"currency": "Kč",
-						"price": "5600"
+					{
+						"header": {
+							"title": "Procvičování (45 min)",
+							"subtitle": "Prohlídka a nácvik trvající 45 minut.",
+							"currency": "Kč",
+							"price": "1000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Nácvik orálních svalů" },
+								{ "listItem": "Myofunkční terapie MFT sTArs 4 - 8 let a 9 – 99 let" },
+								{ "listItem": "Nácvik výslovnosti v cizím jazyce  pomocí ultrazvukové zpětné vazby" },
+								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Oral muscle exercises" },
-							{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-						]
+					{
+						"header": {
+							"title": "Balíček 10 sezení (30 min)",
+							"subtitle": "Balíček deseti 30 minutových sezení.",
+							"currency": "Kč",
+							"price": "5600"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Nácvik orálních svalů" },
+								{ "listItem": "Nácvik výslovnosti v cizím jazyce pomocí ultrazvukové zpětné vazby" },
+								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
+					{
+						"header": {
+							"title": "Balíček 10 sezení (45 min)",
+							"subtitle": "Balíček deseti 45 minutových sezení.",
+							"currency": "Kč",
+							"price": "8000"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Nácvik orálních svalů" },
+								{ "listItem": "Myofunkční terapie MFT sTArs 4 -8 let a 9 – 99 let" },
+								{ "listItem": "Nácvik výslovnosti v cizím jazyce  pomocí ultrazvukové zpětné vazby" },
+								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
 					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Package of 10 (45m)",
-						"subtitle": "Package of 10 45-minute practice session.",
-						"currency": "Kč",
-						"price": "8000"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Oral muscle exercises" },
-							{ "listItem": "Myofunctional therapy MFT sTArs 4 -8 years and 9 – 99 years" },
-							{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-							{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Proffesional consultancy",
-						"subtitle": "Tap into my 20 years of research experience.",
-						"currency": "Kč/hour",
-						"price": "1600"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Usage of ultrasound tongue imaging in speech therapy or foreign language learning" },
-							{ "listItem": "Interpretation of ultrasound images of the tongue" },
-							{ "listItem": "Articulation: speech sound production and evaluation" },
-							{ "listItem": "Speech disorders in children and adults" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				 }
-			    ],
-	 "cs" :
-				[
-			 	 {
-					"header": {
-						"title": "Vstupní prohlídka",
-						"subtitle": "Komplexní vyšetření počas první návštěvy.",
-						"currency": "Kč",
-						"price": "900"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Pozice jazyka v klidu" },
-							{ "listItem": "Mobilita jazyka" },
-							{ "listItem": "Mobilita rtů" },
-							{ "listItem": "Dýchání ústami" },
-							{ "listItem": "Výslovnost hlásek v cizím jazyce" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Procvičování (30m)",
-						"subtitle": "Prohlíkda a nácvik trvající 30 minut.",
-						"currency": "Kč",
-						"price": "700"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Nácvik orálních svalů" },
-							{ "listItem": "Nácvik výslovnosti v cizém jazyce pomocí ultrazvukové spětné vazby" },
-							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Procvičování (45m)",
-						"subtitle": "Prohlíkda a nácvik trvající 45 minut.",
-						"currency": "Kč",
-						"price": "1000"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Nácvik orálních svalů" },
-							{ "listItem": "Myofunkční terapie MFT sTArs 4 - 8 let a 9 – 99 let" },
-							{ "listItem": "Nácvik výslovnosti v cizém jazyce  pomocí ultrazvukové spětné vazby" },
-							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Balíček 10 sezení (30m)",
-						"subtitle": "Balíček deseti 30 minutových sezení.",
-						"currency": "Kč",
-						"price": "5600"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Nácvik orálních svalů" },
-							{ "listItem": "Nácvik výslovnosti v cizém jazyce pomocí ultrazvukové spětné vazby" },
-							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Balíček 10 sezení (45m)",
-						"subtitle": "Balíček deseti 45 minutových sezení.",
-						"currency": "Kč",
-						"price": "8000"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Nácvik orálních svalů" },
-							{ "listItem": "Myofunkční terapie MFT sTArs 4 -8 let a 9 – 99 let" },
-							{ "listItem": "Nácvik výslovnosti v cizém jazyce  pomocí ultrazvukové spětné vazby" },
-							{ "listItem": "Cvičení pro zlepšení orientacie v ústní dutině, pozice a pohybu jayzku" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				},
-				{
-					"header": {
-						"title": "Konzultace",
-						"subtitle": "Využijte 20 let mých zkušeností ve vízkume řeči.",
-						"currency": "Kč/hod",
-						"price": "1600"
-					},
-					"body": {
-						"listItems": [
-							{ "listItem": "Využití ultrazvuku v logopedii a učení cizích jazyků" },
-							{ "listItem": "Interpretace dat z ultrazvukového snímání jazyka." },
-							{ "listItem": "Artikulace: produkce rečovích hlásek a jejich evaluace" },
-							{ "listItem": "Řečové poruchy u dětí a dospělích" }
-						]
-					},
-					"footer": {
-						"buttonName": "FAQ",
-						"buttonLink": "/faq"
-					},
-					"type": "basic"
-				}
-	
-			]
-}
-			
+					{
+						"header": {
+							"title": "Konzultace",
+							"subtitle": "Využijte 20 let mých zkušeností ve vízkumu řeči.",
+							"currency": "Kč/hod",
+							"price": "1600"
+						},
+						"body": {
+							"listItems": [
+								{ "listItem": "Využití ultrazvuku v logopedii a učení cizích jazyků" },
+								{ "listItem": "Interpretace dat z ultrazvukového snímání jazyka." },
+								{ "listItem": "Artikulace: produkce rečových hlásek a jejich evaluace" },
+								{ "listItem": "Řečové poruchy u dětí a dospělých" }
+							]
+						},
+						"footer": {
+							"buttonName": "FAQ",
+							"buttonLink": "/faq"
+						},
+						"type": "basic"
+					}
+		
+				]
+	}
+				

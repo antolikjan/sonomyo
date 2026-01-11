@@ -9,7 +9,7 @@ export const ui = {
       'topblurb' : 'Myofunkční terapie pomocí ultrazvukového bio-feedbacku',
       'book' : 'Rezervace',
       'about_title' : '<strong>SonoMyo</strong>: jazyk na správném místě',
-      'about_text' : 'Byly by ste překvapeni jak moc mohou každodenní návyky a pohybové vzorce rtů a jayzka ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám nebo vašemu dítěti vybudovat si zdravé motorické návyky jazyka a úst, které vydrží – krok za krokem a s povzbuzením na cestě.',
+      'about_text' : 'Byli by ste překvapeni jak moc mohou každodenní návyky a pohybové vzorce rtů a jazyka ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Naším cílem je jednoduchý: pomoci vám nebo vašemu dítěti vybudovat si zdravé motorické návyky jazyka a úst, které vydrží – krok za krokem a s povzbuzením na cestě.',
       'remote_consultation_title' : 'Online konzultace',
       'remote_consultation_text' : 'Nejste si jisti, zda-li je terapie pro vás? Poradíme vám bez nutnosti osobní návštěvy.',
       'inperson_consultation_title' : 'Osobně',
@@ -23,9 +23,9 @@ export const ui = {
                       "nevhodné ústní dýchání",
                       "předcházení rovnátkům",
                       "prevence relapsu v ortodontické péči",
-                      "flexibilita podjazykové uzdiček",
+                      "flexibilita podjazykové uzdičky",
                       "podpora logopedické terapie",
-                      "skřípání zuby (bruxismus)",
+                      "skřípání zubů (bruxismus)",
                       "špatné držení těla",
                       "zlepšení orálního mikrobiomu",
                       "nižší kazivost chrupu"
@@ -34,8 +34,8 @@ export const ui = {
                        "nevhodné ústní dýchání",
                        "prevence relapsu v ortodontické péči",
                        "bolesti čelistních kloubů, zad a hlavy",
-                       "chrápání a spánková apno",
-                       "skřípání zuby (bruxismus)",
+                       "chrápání a spánková apnoe",
+                       "skřípání zubů (bruxismus)",
                        "zlepšení orálního mikrobiomu",
                        "snížení kazivosti chrupu",
                        "zlepšení výslovnosti v cizích jazycích"
@@ -44,7 +44,7 @@ export const ui = {
       'promise_text' : '• Podporu bez odsuzování<br>• Jasné cíle a měřitelný progres<br>• Praktický domácí trénink a kontinuální podporu'
     },
     about : {
-        'description' : 'Myofunkční terapeut a vědec zabívající se řečí působící v Praze a Lublani.'
+        'description' : 'Myofunkční terapeut a vědec zabývající se řečí působící v Praze a Lublani.'
     },
     contact : {
         'firstN' : 'Jméno',
@@ -77,14 +77,14 @@ export const ui = {
         '/services' : 'Služby',
     } as Record<string, string>,
     myofunctional_therapy : {
-        'title' : 'Orální myofunkční terapie pro děti a dospělý',
-        'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. <br><br> Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové motorícké vzorce ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Náš cíl je jednoduchý: pomoci vám nebo vašemu dítěti vybudovat si zdravý tonus a pohybové vzorce jazyka, které vydrží – krok za krokem.',
+        'title' : 'Orální myofunkční terapie pro děti a dospělé',
+        'text' : 'Orální myofunkční terapie (OMT) je šetrný a praktický přístup, který pomáhá regenerovat svaly obličeje, rtů, jazyka a čelisti, aby fungovaly tak, jak mají – podporuje přirozené dýchání, efektivní polykání, jasnější řečové vzorce a klidnější spánek. <br><br> Mnoho lidí je překvapeno, když zjistí, jak moc mohou každodenní návyky a svalové motorické vzorce ovlivnit způsob, jakým dýcháme, jíme, rosteme a cítíme se. Náš cíl je jednoduchý: pomoci vám nebo vašemu dítěti vybudovat si zdravý tonus a pohybové vzorce jazyka, které vydrží – krok za krokem.',
         'workwith_title' : 'S kým pracujeme',
-        'workwith_text' :  'Pracujeme s dětmi i dospělými, kteří se potýkají s:<br><br>• Dýcháním ústy nebo s otevřenými ústy v klidu<br>• Nesprávné klidové pozici jazyka - jazyk odpočívá na dně ústni dutiny<br>• Tlakem jazyka na přední zuby<br>• Chrápáním nebo neklidným spánkem (v rámci týmové péče)<br>• Obavami z ortodontické recidivy nebo s potřebou podporní terapie během nošení rovnátek<br>• Napětím v čelisti/obličeji<br>',
+        'workwith_text' :  'Pracujeme s dětmi i dospělými, kteří se potýkají s:<br><br>• Dýcháním ústy nebo s otevřenými ústy v klidu<br>• Nesprávné klidové pozici jazyka - jazyk odpočívá na dně ústní dutiny<br>• Tlakem jazyka na přední zuby<br>• Chrápáním nebo neklidným spánkem (v rámci týmové péče)<br>• Obavami z ortodontické recidivy nebo s potřebou podpůrní terapie během nošení rovnátek<br>• Napětím v čelisti/obličeji<br>',
         'offer_title' :  'What we offer',
         'offer_text' : '',
         'offer_1_title' : 'Komplexní myofunkční vyšetření',
-        'offer_1_text' : 'Vaše první návštěva je zaměřeba na důkladní strukturované vyšetření. Zaměříme se na dýchací vzorce, klidové držení jazyka v ústech, pohyblivost jazyka, funkci polykání, rovnováhu obličejových svalů a návyky – spolu s anamnézou a cíli. Odejdete s jasnou představou o tom, co zjistíme, a s personalizovaným plánem přizpůsobeným vám nebo vašemu dítěti.',      
+        'offer_1_text' : 'Vaše první návštěva je zaměřena na důkladní strukturované vyšetření. Zaměříme se na dýchací vzorce, klidové držení jazyka v ústech, pohyblivost jazyka, funkci polykání, rovnováhu obličejových svalů a návyky – spolu s anamnézou a cíli. Odejdete s jasnou představou o tom, co zjistíme, a s personalizovaným plánem přizpůsobeným vám nebo vašemu dítěti.',      
         'offer_2_title' : 'Personalizovaný program orální myofunkční terapie',
         'offer_2_text' : 'Terapie je individuální a přizpůsobená potřebám klienta. Sezení zahrnují:<br><br>• Cílená cvičení pro posílení síly, koordinace a vytrvalosti<br>• Podrobný návod na dýchání nosem a zdravé držení těla v klidu<br>• Praktické strategie, které odpovídají reálnému životu (škola, práce, sport, nabitý program)<br>• Domácí cvičení, která jsou jednoduché, proveditelné a srozumitelně vysvětlené<br><br>Terapie probíhá podle programu MFTsTArs a je podporována vizuální zpětnou vazbou prostřednictvím ultrazvukového zobrazování jazyka.<br><br>Zaměřujeme se na pokrok, který můžete cítit a vidět – zlepšení návyků a fungování v každodenním životě, nejen v terapeutické místnosti.<br><br>',
         'offer_3_title' : 'Ortodontická podpora (před, během nebo po léčbě)',
@@ -122,7 +122,7 @@ export const ui = {
       'inperson_consultation_title' : 'In person',
       'inperson_consultation_text' : 'Come to our practice.',
       'difference_title' : 'How are we <strong>different</strong>?',
-      'difference_text' : '<strong>SonoMyo</strong> is the first and only practice in the Czech Republic utilising <strong>ultrasound biofeedback</strong> to guide therapy, speeding it up and increasing its effectiveness. <br><br> Ultrasound lets you <strong>see your tongue move in real time</strong>, so you don’t have to guess whether you’re doing an exercise correctly. This visual feedback helps patterns “click” faster—supporting <strong>better tongue posture, breathing habits, swallowing, and clear speech</strong>. <br><br> Ultrasound is gentle, safe, and non-invasive: a small probe rests under the chin while we coach you step-by-step. <br><br> I have 20 year experience in researching ultrasound guided bio-feedback in speech therapy and articulation training, having shown its efficacy in multiple studies. With SonoMyo I am bringing this cutting edge therapy approach to you. <br><br> <strong>MSc. Tanja Kocjančič Antolík, PhD</strong> <br> <em>Speech scientists and certified myofunctional therapist</em>',
+      'difference_text' : '<strong>SonoMyo</strong> is the first and only practice in the Czech Republic utilising <strong>ultrasound biofeedback</strong> to guide therapy, speeding it up and increasing its effectiveness. <br><br> Ultrasound lets you <strong>see your tongue move in real time</strong>, so you don’t have to guess whether you’re doing an exercise correctly. This visual feedback helps patterns “click” faster—supporting <strong>better tongue posture, breathing habits, swallowing, and clear speech</strong>. <br><br> Ultrasound is gentle, safe, and non-invasive: a small probe rests under the chin while we coach you step-by-step. <br><br> I have 20 years experience in researching ultrasound-guided bio-feedback in speech therapy and articulation training, having shown its efficacy in multiple studies. With SonoMyo I am bringing this cutting-edge therapy approach to you. <br><br> <strong>MSc. Tanja Kocjančič Antolík, PhD</strong> <br> <em>Speech scientists and certified myofunctional therapist</em>',
       'help_title' : 'Which problems do we address?' ,
       'help_kids_title' : 'Children',
       'help_adults_title' : 'Adults',
@@ -147,12 +147,12 @@ export const ui = {
                         "reduction of dental caries",
                         "improvement of pronunciation in foreign languages"
                       ] as string[],
-      'promise_title' : 'Our <strong>pormise</strong>',
+      'promise_title' : 'Our <strong>promise</strong>',
       'promise_text' : '• A supportive, judgment-free environment<br>• Clear goals and measurable progress<br>• Practical home practice with coaching and accountability'
 
     },
     about : {
-        'description' :'Myofunctional therapist and speech scientists based in Prague and Ljubljana.'
+        'description' :'Myofunctional therapist and speech scientist based in Prague and Ljubljana.'
     },
     contact : {
         'firstN' : 'First Name',
@@ -209,8 +209,8 @@ export const ui = {
       ultrasound_imaging :
       {
         'title' : 'Ultrasound imaging bio-feedback',
-        'text' : 'Ultrasound is a effective learning tool, because it lets you see the tongue move in real time. For example, for clients who struggle with certain sounds, this visual feedback can make tongue placement finally “click.” This service is especially helpful when a client needs clearer, more specific feedback about tongue shape and movement. The method can be used for practicing pronunciation in a native or foreign language, and is suitable for children from the age of 5 years and adults.',
-        'ultra_title' : 'How does a <strong>traing session</strong> look?',
+        'text' : 'Ultrasound is an effective learning tool, because it lets you see the tongue move in real time. For example, for clients who struggle with certain sounds, this visual feedback can make tongue placement finally “click.” This service is especially helpful when a client needs clearer, more specific feedback about tongue shape and movement. The method can be used for practicing pronunciation in a native or foreign language, and is suitable for children from the age of 5 years and adults.',
+        'ultra_title' : 'How does a <strong>training session</strong> look?',
         'ultra' : 'During an ultrasound session, a small ultrasound probe is held under the chin to visualize tongue movement. We use this information to coach more accurate tongue placement and help build consistent patterns over time. <br><br> (This is training and coaching—not a medical diagnosis.)',
         'collaboration_title' : '<strong>Collaborative</strong> approach',        
         'collaboration' : 'If you are currently working with a  Orthodontist or Speech-Language Pathologist, we’re happy to collaborate so your treatment goals stay aligned.',
