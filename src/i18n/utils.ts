@@ -7,7 +7,20 @@ export function getLangFromParams(
 }
 
 export function localizePath(path: string, lang: Lang): string {
-  return path === '/'
-    ? `/${lang}`
-    : `/${lang}${path}`;
+  // Do not localize external or special links
+  if (
+    path.startsWith('http://') ||
+    path.startsWith('https://') ||
+    path.startsWith('mailto:') ||
+    path.startsWith('tel:')
+  ) {
+    return path
+  }
+
+  // Normalize root
+  if (path === '/') {
+    return `/${lang}`
+  }
+
+  return `/${lang}${path}`
 }

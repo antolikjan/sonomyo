@@ -60,7 +60,7 @@ export const footerNavigationData: FooterData = {
 				subCategories: [
 					{
 						subCategory: 'Services',
-						subCategoryLink: '/services'
+						subCategoryLink: '/myofunctional-therapy'
 					},
 					{
 						subCategory: 'FAQ',
@@ -77,7 +77,7 @@ export const footerNavigationData: FooterData = {
 				subCategories: [
 					{
 						subCategory: 'About',
-						subCategoryLink: '/About'
+						subCategoryLink: '/about'
 					},
 					{
 						subCategory: 'News',
@@ -89,9 +89,18 @@ export const footerNavigationData: FooterData = {
 				category: 'Get in touch',
 				subCategories: [
 					{
-						subCategory: 'Contact',
+						subCategory: 'Contact form',
 						subCategoryLink: '/contact'
 					},
+					{
+						subCategory: '+420 732 171 923',
+						subCategoryLink: ''
+					},
+					{
+						subCategory: 'Map',
+						subCategoryLink: 'https://maps.app.goo.gl/usXCzWQU5gcWHmua9'
+					},
+				
 				]
 			}
 		],
@@ -117,7 +126,7 @@ export const footerNavigationData: FooterData = {
 				subCategories: [
 					{
 						subCategory: 'Služby',
-						subCategoryLink: '/services'
+						subCategoryLink: '/myofunctional-therapy'
 					},
 					{
 						subCategory: 'FAQ',
@@ -134,7 +143,7 @@ export const footerNavigationData: FooterData = {
 				subCategories: [
 					{
 						subCategory: 'O mně',
-						subCategoryLink: '/About'
+						subCategoryLink: '/about'
 					},
 					{
 						subCategory: 'Novinky',
@@ -146,8 +155,16 @@ export const footerNavigationData: FooterData = {
 				category: 'Kontaktujte nás',
 				subCategories: [
 					{
-						subCategory: 'Kontakt',
+						subCategory: 'Kontaktní formulář',
 						subCategoryLink: '/contact'
+					},
+					{
+						subCategory: '+420 732 171 923',
+						subCategoryLink: ''
+					},
+					{
+						subCategory: 'Mapa',
+						subCategoryLink: 'https://maps.app.goo.gl/usXCzWQU5gcWHmua9'
 					},
 				]
 			}
@@ -157,3 +174,7 @@ export const footerNavigationData: FooterData = {
 		}
 	}
 }
+
+
+
+

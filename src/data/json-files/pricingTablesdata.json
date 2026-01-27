@@ -26,7 +26,7 @@
 							"title": "Entry evaluation",
 							"subtitle": "Comprehensive evaluation during the first visit.",
 							"currency": "Kč",
-							"price": "1000"
+							"price": "2900"
 						},
 						"body": {
 							"listItems": [
@@ -45,30 +45,10 @@
 					},
 					{
 						"header": {
-							"title": "Practice session (30 min)",
-							"subtitle": "Single practice session lasting 30 minutes.",
-							"currency": "Kč",
-							"price": "700"
-						},
-						"body": {
-							"listItems": [
-								{ "listItem": "Oral muscle exercises" },
-								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-							]
-						},
-						"footer": {
-							"buttonName": "FAQ",
-							"buttonLink": "/faq"
-						},
-						"type": "basic"
-					},
-					{
-						"header": {
 							"title": "Practice session (45 min)",
 							"subtitle": "Single practice session lasting 45 minutes.",
 							"currency": "Kč",
-							"price": "1000"
+							"price": "1850"
 						},
 						"body": {
 							"listItems": [
@@ -86,30 +66,10 @@
 					},
 					{
 						"header": {
-							"title": "Package of 10 (30 min)",
-							"subtitle": "Package of 10 30-minute practice sessions.",
-							"currency": "Kč",
-							"price": "5600"
-						},
-						"body": {
-							"listItems": [
-								{ "listItem": "Oral muscle exercises" },
-								{ "listItem": "Foreign language pronunciation practice with ultrasound tongue imaging" },
-								{ "listItem": "Exercises for better understanding of one's oral space, tongue positions, and movements" }
-							]
-						},
-						"footer": {
-							"buttonName": "FAQ",
-							"buttonLink": "/faq"
-						},
-						"type": "basic"
-					},
-					{
-						"header": {
 							"title": "Package of 10 (45 min)",
 							"subtitle": "Package of 10 45-minute practice sessions.",
 							"currency": "Kč",
-							"price": "8000"
+							"price": "15725"
 						},
 						"body": {
 							"listItems": [
@@ -130,7 +90,7 @@
 							"title": "Profesional consultancy",
 							"subtitle": "Tap into my 20 years of research experience.",
 							"currency": "Kč/hour",
-							"price": "1600"
+							"price": "3000"
 						},
 						"body": {
 							"listItems": [
@@ -168,13 +128,12 @@
 						},
 						"type": "basic"
 					},
-
 					{
 						"header": {
 							"title": "Vstupní prohlídka",
 							"subtitle": "Komplexní vyšetření během první návštěvy.",
 							"currency": "Kč",
-							"price": "1000"
+							"price": "2900"
 						},
 						"body": {
 							"listItems": [
@@ -193,30 +152,10 @@
 					},
 					{
 						"header": {
-							"title": "Procvičování (30 min)",
-							"subtitle": "Prohlídka a nácvik trvající 30 minut.",
-							"currency": "Kč",
-							"price": "700"
-						},
-						"body": {
-							"listItems": [
-								{ "listItem": "Nácvik orálních svalů" },
-								{ "listItem": "Nácvik výslovnosti v cizím jazyce pomocí ultrazvukové zpětné vazby" },
-								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
-							]
-						},
-						"footer": {
-							"buttonName": "FAQ",
-							"buttonLink": "/faq"
-						},
-						"type": "basic"
-					},
-					{
-						"header": {
 							"title": "Procvičování (45 min)",
 							"subtitle": "Prohlídka a nácvik trvající 45 minut.",
 							"currency": "Kč",
-							"price": "1000"
+							"price": "1850"
 						},
 						"body": {
 							"listItems": [
@@ -234,30 +173,10 @@
 					},
 					{
 						"header": {
-							"title": "Balíček 10 sezení (30 min)",
-							"subtitle": "Balíček deseti 30 minutových sezení.",
-							"currency": "Kč",
-							"price": "5600"
-						},
-						"body": {
-							"listItems": [
-								{ "listItem": "Nácvik orálních svalů" },
-								{ "listItem": "Nácvik výslovnosti v cizím jazyce pomocí ultrazvukové zpětné vazby" },
-								{ "listItem": "Cvičení pro zlepšení orientace v ústní dutině, pozice a pohybu jayzka" }
-							]
-						},
-						"footer": {
-							"buttonName": "FAQ",
-							"buttonLink": "/faq"
-						},
-						"type": "basic"
-					},
-					{
-						"header": {
 							"title": "Balíček 10 sezení (45 min)",
 							"subtitle": "Balíček deseti 45 minutových sezení.",
 							"currency": "Kč",
-							"price": "8000"
+							"price": "15725"
 						},
 						"body": {
 							"listItems": [
@@ -278,7 +197,7 @@
 							"title": "Konzultace",
 							"subtitle": "Využijte 20 let mých zkušeností ve vízkumu řeči.",
 							"currency": "Kč/hod",
-							"price": "1600"
+							"price": "3000"
 						},
 						"body": {
 							"listItems": [

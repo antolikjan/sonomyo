@@ -11,6 +11,7 @@ import { Icon } from 'astro-icon/components'
 // Data
 import { socialLinks } from '../../config/socialLinks'
 import { footerNavigationData } from '../../config/footerNavigation'
+import { localizePath } from '../../i18n/utils'
 
 const lang = Astro.params.lang === 'en' ? 'en' : 'cs';
 const { footerAbout, footerColumns, subFooter } = footerNavigationData[lang]
@@ -37,7 +38,7 @@ const { footerAbout, footerColumns, subFooter } = footerNavigationData[lang]
 							<ul>
 								{column.subCategories.map((subCategory) => (
 									<li>
-										<a href={subCategory.subCategoryLink}> {subCategory.subCategory} </a>
+										<a href={localizePath(subCategory.subCategoryLink, lang)}> {subCategory.subCategory} </a>
 									</li>
 								))}
 							</ul>
