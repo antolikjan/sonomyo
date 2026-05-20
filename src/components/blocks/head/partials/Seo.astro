@@ -19,6 +19,20 @@ type Props = {
 }
 
 const { title, description, ogImage, canonical, noindex } = Astro.props
+
+// Build canonical + hreflang URLs from the current pathname
+const pathname = Astro.url.pathname // e.g. "/cs/about/" or "/en/about/"
+const site = Astro.site ?? new URL("https://www.sonomyo.cz/")
+
+const stripLocale = (p: string) => p.replace(/^\/(cs|en)(\/|$)/, "/")
+const basePath = stripLocale(pathname) // e.g. "/about/" or "/"
+
+const csPath = `/cs${basePath}`.replace(/\/+$/, "/")
+const enPath = `/en${basePath}`.replace(/\/+$/, "/")
+
+const canonicalUrl = new URL(pathname, site).toString()
+const csUrl = new URL(csPath, site).toString()
+const enUrl = new URL(enPath, site).toString()
 ---
 
 <Fragment>
@@ -34,7 +48,12 @@ const { title, description, ogImage, canonical, noindex } = Astro.props
 	<meta property="twitter:title" content={title} />
 	<meta property="twitter:description" content={description} />
 	<meta property="twitter:image" content={ogImage} />
-	<link rel="canonical" href={Astro.url} />
-	{canonical && <link rel="canonical" href={Astro.url} item-prop="url" />}
+
+	{canonical && <link rel="canonical" href={canonicalUrl} item-prop="url" />}
 	{noindex && <meta name="robots" content="noindex,nofollow" />}
+
+	<link rel="alternate" hreflang="cs" href={csUrl} />
+	<link rel="alternate" hreflang="en" href={enUrl} />
+	<link rel="alternate" hreflang="x-default" href={enUrl} />
+
 </Fragment>
