@@ -100,7 +100,7 @@
 							},
 							{
 								"question": "Používáte specifický myofunkční terapeutický program?",
-								"reply": "Ano, jsem certifikovaný myofunkční terapeut <a href=\"https://www.mftstars.cz/\">MFT sTArs</a> programu, který je jádrem terapi v SonoMyo.",
+								"reply": "Ano, jsem certifikovaný myofunkční terapeut <a href=\"https://www.mftstars.cz/\">MFT sTArs</a> programu, který je jádrem terapií v SonoMyo.",
 								"open": false
 							}
 						]
@@ -124,7 +124,7 @@
 							},
 							{
 								"question": "Je ultrazvukové zobrazování jazyka bezpečné?",
-								"reply": "Ano, ultrazvukové zobrazování je zcela bezpečné pro děti i dospělé. Používáme stejnou technologii, která se používá v klinické praxi, třeba při ultrazvukovém vyšetření v těhotenstve.",
+								"reply": "Ano, ultrazvukové zobrazování je zcela bezpečné pro děti i dospělé. Používáme stejnou technologii, která se používá v klinické praxi, třeba při ultrazvukovém vyšetření v těhotenství.",
 								"category": "ultrasound",
 								"open": false
 							},
